@@ -554,17 +554,7 @@
     }
   ],
   "manual": {
-    "products": [
-      {
-        "id": "AY-Mmqtqhezt733",
-        "name": "TEST-同步验证款 PP Rug",
-        "price": "$9.9",
-        "moq": "",
-        "img": "https://img.alicdn.com/imgextra/i1/O1CN01YyMrnH1TH65JNfJZU_!!6000000002356-2-tps-600-600.png",
-        "url": "",
-        "manual": true
-      }
-    ],
+    "products": [],
     "scripts": [],
     "intel": [],
     "certs": []
