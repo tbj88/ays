@@ -733,7 +733,206 @@
         "https://s.alicdn.com/@sc04/kf/Hbdc2e595fe79483788b052f61644a993c/Factory-Environmental-protection-and-Anti-aging-Custom.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Antimicrobial, Pets",
+            "zh": "可水洗、双面可逆、防污、防滑、抗菌、宠物适用"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "3.5mm-4.5mm",
+            "zh": "3.5mm-4.5mm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Striped",
+            "zh": "条纹"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Braided, Machine Made",
+            "zh": "编织、提花、绞编、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Low Pile",
+            "zh": "低绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Outdoor, Beach, Indoor, Home, Travel, Picnic, Camping",
+            "zh": "户外、沙滩、室内、家用、旅行、野餐、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "180x90cm/6x3ft, 180x270cm/6x9ft, 270x360cm/9x12ft",
+            "zh": "180x90cm/6x3ft、180x270cm/6x9ft、270x360cm/9x12ft"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "500pcs",
+            "zh": "500pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -751,7 +950,173 @@
         "https://s.alicdn.com/@sc04/kf/H8af0dbbd4da540249625750cfe915435l/Large-size-Floor-Mat-2-5x3m-3x3m.jpg_350x350.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Pet Friendly",
+            "zh": "可水洗、双面可逆、防污、防滑、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Square",
+            "zh": "方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Loop Pile, Woven, Jacquard, Machine Made",
+            "zh": "圈绒、编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "Taizhou Aiyisi",
+            "zh": "Taizhou Aiyisi"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Picnic, Camping, Outdoor, Beach",
+            "zh": "家用、旅行、野餐、露营、户外、沙滩"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "250x300cm, 250x350cm, 250x400cm, 250x450cm, 300x300cm, 300x400cm",
+            "zh": "250x300cm、250x350cm、250x400cm、250x450cm、300x300cm、300x400cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "31 days",
+            "zh": "31 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -769,7 +1134,85 @@
         "https://s.alicdn.com/@sc04/kf/H518397782b2a418096c37849e401c2ebx/Outdoor-RV-Plastic-Mat-Recycled-Camping-Picnic.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "PVC",
+            "zh": "PVC"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangular",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven",
+            "zh": "编织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Camping, Home, Hotel, Bedroom, Outdoor",
+            "zh": "露营、家用、酒店、卧室、户外"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X35X12 cm",
+            "zh": "92X35X12 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -787,7 +1230,173 @@
         "https://s.alicdn.com/@sc04/kf/H8835dfa05c4c42dc91c7cbb4687b4410G/Extra-Large-Outdoor-Camping-Mat-for-SUV.jpg_350x350.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Pet Friendly",
+            "zh": "可水洗、双面可逆、防污、防滑、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Square",
+            "zh": "方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Loop Pile, Woven, Jacquard, Machine Made",
+            "zh": "圈绒、编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "Taizhou Aiyisi",
+            "zh": "Taizhou Aiyisi"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Picnic, Camping, Outdoor, Beach",
+            "zh": "家用、旅行、野餐、露营、户外、沙滩"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "250x300cm, 250x400cm, 300x300cm, 300x400cm",
+            "zh": "250x300cm、250x400cm、300x300cm、300x400cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "31 days",
+            "zh": "31 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -805,7 +1414,173 @@
         "https://s.alicdn.com/@sc04/kf/H646b54279607476eb71009ee0a00e74fG/CE-Certified-for-European-Market-Large-Size.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Pet Friendly",
+            "zh": "可水洗、双面可逆、防污、防滑、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Square",
+            "zh": "方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Loop Pile, Woven, Jacquard, Machine Made",
+            "zh": "圈绒、编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "Taizhou Aiyisi",
+            "zh": "Taizhou Aiyisi"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Picnic, Camping, Outdoor, Beach",
+            "zh": "家用、旅行、野餐、露营、户外、沙滩"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "250x300cm, 250x350cm, 250x400cm, 250x450cm",
+            "zh": "250x300cm、250x350cm、250x400cm、250x450cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "31 days",
+            "zh": "31 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -823,7 +1598,118 @@
         "https://s.alicdn.com/@sc04/kf/Hbda0e3b29328442a820c07872e8a9250V/Top-Seller-Awning-Carpet-Outdoor-Camping-Reversible.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "PVC",
+            "zh": "PVC"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangular",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "Aiyisi",
+            "zh": "Aiyisi"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Self-driving Travel, Garden, Patio, RV",
+            "zh": "Self-driving Travel、花园、露台、房车"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "20 days",
+            "zh": "20 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -841,7 +1727,195 @@
         "https://s.alicdn.com/@sc04/kf/H966d0b79a88440ba806c25dab859fd7ba/New-Style-6X9-Hot-Modern-Indoor-Outdoor.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Stain Resistant, Non-Slip, Eco-friendly & Lightweight",
+            "zh": "可水洗、防污、防滑、环保轻便"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "Thin (0.2-0.4 in.)",
+            "zh": "Thin (0.2-0.4 in.)"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Machine Made, Jacquard, Braided",
+            "zh": "编织、机织、提花、绞编"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Low Pile",
+            "zh": "低绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Picnic, Camping, Outdoor, Beach, Indoor",
+            "zh": "家用、旅行、野餐、露营、户外、沙滩、室内"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "180x90cm/3x6ft, 180x270cm/6x9ft, 150x210cm/5x7ft, 120x180cm/4x6ft",
+            "zh": "180x90cm/3x6ft、180x270cm/6x9ft、150x210cm/5x7ft、120x180cm/4x6ft"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -859,7 +1933,206 @@
         "https://s.alicdn.com/@sc04/kf/H8875593f11bf478d911e232d1834c548p/Outdoor-Reversible-5x8-ft-Area-Rug-UV.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Stain Resistant, Reversible, Waterproof, Non-Slip, Pet Friendly, Eco-Friendly",
+            "zh": "可水洗、防污、双面可逆、防水、防滑、宠物友好、环保"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "4mm",
+            "zh": "4mm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Braided, Machine Made",
+            "zh": "编织、提花、绞编、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Low Pile",
+            "zh": "低绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Camping",
+            "zh": "露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "500pcs",
+            "zh": "500pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "30 days",
+            "zh": "30 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "40X10X10 cm",
+            "zh": "40X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "20.000 kg",
+            "zh": "20.000 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -877,7 +2150,228 @@
         "https://s.alicdn.com/@sc04/kf/Hf646e4549d0d457a954ea2793bb6526d2/Wholesale-Custom-Polypropylene-Plastic-Outdoor-Patio-Rugs.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Pet Friendly, Easy Clean, Durable",
+            "zh": "可水洗、双面可逆、防污、宠物友好、易清洁、耐用"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "Thin (0.2-0.4 in.)",
+            "zh": "Thin (0.2-0.4 in.)"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Machine Made, Flat Weave",
+            "zh": "编织、提花、机织、平织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Care instructions",
+            "zh": "护理说明"
+          },
+          "v": {
+            "en": "Hand Wash",
+            "zh": "手洗"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Flat Pile",
+            "zh": "平绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Certificate",
+            "zh": "认证"
+          },
+          "v": {
+            "en": "BSCI",
+            "zh": "BSCI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Logo",
+            "zh": "LOGO"
+          },
+          "v": {
+            "en": "Accept Customized Logo",
+            "zh": "接受定制LOGO"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Sample",
+            "zh": "样品"
+          },
+          "v": {
+            "en": "Support Sample Service",
+            "zh": "支持样品服务"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "500 pieces",
+            "zh": "500 pieces"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "30 Days",
+            "zh": "30 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "45X40X15 cm",
+            "zh": "45X40X15 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "2.000 kg",
+            "zh": "2.000 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -895,7 +2389,173 @@
         "https://s.alicdn.com/@sc04/kf/H773a940d053642d08acfe3e700351963T/Jacquard-Striped-Outdoor-Polypropylene-Rug-Machine-Made.jpg_350x350.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Eco-Friendly, Anti-Bacteria, Moisture-Proof, Washable",
+            "zh": "环保、抗菌、防潮、可水洗"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven",
+            "zh": "编织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Camping",
+            "zh": "露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "500pcs",
+            "zh": "500pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "40X10X10 cm",
+            "zh": "40X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "20.000 kg",
+            "zh": "20.000 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -913,7 +2573,162 @@
         "https://s.alicdn.com/@sc04/kf/H7ecd6f87482f4450abfec14c4de49d54Q/Nautical-Themed-Outdoor-Rug-Freedom-Collection-Large.jpg_350x350.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Eco-Friendly, Anti-Bacteria, Moisture-Proof, Washable",
+            "zh": "环保、抗菌、防潮、可水洗"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven",
+            "zh": "编织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Camping",
+            "zh": "露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "200pcs",
+            "zh": "200pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "40X10X10 cm",
+            "zh": "40X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "20.000 kg",
+            "zh": "20.000 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -931,7 +2746,184 @@
         "https://s.alicdn.com/@sc04/kf/H502dd88e407b435bbe4e2de1baa24967Z/Outdoor-Rug-Freedom-Collection-Nautical-Themed-Smart.jpg_350x350.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Eco-Friendly, Anti-Bacteria, Moisture-Proof, Washable",
+            "zh": "环保、抗菌、防潮、可水洗"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven",
+            "zh": "编织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Camping",
+            "zh": "露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "200pcs",
+            "zh": "200pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "40X10X10 cm",
+            "zh": "40X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "20.000 kg",
+            "zh": "20.000 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -949,7 +2941,129 @@
         "https://s.alicdn.com/@sc04/kf/H43b9eceb00d24544893ed6c6f45df9e4g/Outdoor-Camping-Reversible-Carpet-Rv-Rug-Outdoor.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "PVC",
+            "zh": "PVC"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Reversible, Waterproof",
+            "zh": "双面可逆、防水"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangular",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Garden, Patio, RV",
+            "zh": "花园、露台、房车"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "30 days",
+            "zh": "30 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -967,7 +3081,151 @@
         "https://s.alicdn.com/@sc04/kf/Hdd19c75cde74478197b9cf959cacb5ecQ/UV-protection-Garden-Outdoor-Plastic-PP-Straw.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Waterproof, Lightweight",
+            "zh": "可水洗、双面可逆、防污、防滑、防水、轻便"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Flat Weave",
+            "zh": "编织、提花、平织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Certificate",
+            "zh": "认证"
+          },
+          "v": {
+            "en": "BSCI",
+            "zh": "BSCI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "1000 pieces",
+            "zh": "1000 pieces"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "20 days",
+            "zh": "20 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -985,7 +3243,173 @@
         "https://s.alicdn.com/@sc04/kf/H53bbf026542b4eeabfb8d3556a88ab1bc/Outdoor-Rv-Patio-Mats-Carpet-Roll-Picnic.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Waterproof, Mold Resistant, Fade-resistant",
+            "zh": "可水洗、双面可逆、防污、防滑、防水、防霉、防褪色"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle & Round",
+            "zh": "长方形和圆形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Novelty",
+            "zh": "创意"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Machine Made",
+            "zh": "编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Sample",
+            "zh": "样品"
+          },
+          "v": {
+            "en": "Yes",
+            "zh": "支持"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Picnic, Commercial, Camping",
+            "zh": "家用、旅行、野餐、商用、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90x180cm/3x6ft, 120x180cm/4x6ft, 150x210cm/5x7ft, 180x270cm/6x9ft, 270x360cm/9x12ft",
+            "zh": "90x180cm/3x6ft、120x180cm/4x6ft、150x210cm/5x7ft、180x270cm/6x9ft、270x360cm/9x12ft"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "20 days",
+            "zh": "20 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1003,7 +3427,173 @@
         "https://s.alicdn.com/@sc04/kf/Hfb2f0ec7ff0e45ae986c7030d596af5fV/Sustainable-Eco-Friendly-Carpet-Polypropylene-Outdoor-Plastic.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Pet Friendly",
+            "zh": "可水洗、双面可逆、防污、防滑、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Loop Pile, Woven, Jacquard, Machine Made",
+            "zh": "圈绒、编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Camping",
+            "zh": "家用、旅行、车用、野餐、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm",
+            "zh": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "1000pcs",
+            "zh": "1000pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "20 days",
+            "zh": "20 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "90X10X10 cm",
+            "zh": "90X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1021,7 +3611,184 @@
         "https://s.alicdn.com/@sc04/kf/Ha925cff3635a47f59d8d068ddd8885701/2023-Outdoor-Polypropylene-Plastic-Woven-Outdoor-Mat.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Pet Friendly",
+            "zh": "可水洗、双面可逆、防污、防滑、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Napless",
+            "zh": "无绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Loop Pile, Woven, Jacquard, Braided, Machine Made",
+            "zh": "圈绒、编织、提花、绞编、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Certificate",
+            "zh": "认证"
+          },
+          "v": {
+            "en": "BSCI",
+            "zh": "BSCI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Commercial, Camping, Exercise",
+            "zh": "家用、旅行、车用、野餐、商用、露营、健身"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm",
+            "zh": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "1000pcs",
+            "zh": "1000pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "20 days",
+            "zh": "20 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "90X10X10 cm",
+            "zh": "90X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1039,7 +3806,184 @@
         "https://s.alicdn.com/@sc04/kf/Hcdece136eaa84f71bffed2259a1c6fafo/Custom-Living-Room-Washable-Rugs-and-Carpet.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Pet Friendly",
+            "zh": "可水洗、双面可逆、防污、防滑、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Fluff Free",
+            "zh": "无绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Loop Pile, Woven, Jacquard, Braided, Machine Made",
+            "zh": "圈绒、编织、提花、绞编、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Certificate",
+            "zh": "认证"
+          },
+          "v": {
+            "en": "BSCI",
+            "zh": "BSCI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Commercial, Camping, Exercise, Prayer",
+            "zh": "家用、旅行、车用、野餐、商用、露营、健身、祈祷"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm",
+            "zh": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "500pcs",
+            "zh": "500pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "20 days",
+            "zh": "20 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "90X10X10 cm",
+            "zh": "90X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1057,7 +4001,162 @@
         "https://s.alicdn.com/@sc04/kf/H8a3dfe349af64c7a8b964bc1b2c29376G/Tapis-De-Priere-Islam-Area-Rug-Outdoor.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Stain Resistant",
+            "zh": "可水洗、防污"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Loop Pile, Woven, Jacquard, Braided, Machine Made",
+            "zh": "圈绒、编织、提花、绞编、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "China",
+            "zh": "中国"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Commercial, Camping",
+            "zh": "家用、旅行、车用、野餐、商用、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm",
+            "zh": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "1000pcs",
+            "zh": "1000pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "20 days",
+            "zh": "20 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "90X10X10 cm",
+            "zh": "90X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1075,7 +4174,173 @@
         "https://s.alicdn.com/@sc04/kf/Hf284e2fa811b494f8024d0334a906862D/Washable-Polypropylene-Geometric-pp-Straw-Mats-rugs.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Non-Slip, Pet Friendly",
+            "zh": "可水洗、双面可逆、防污、防滑、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Loop Pile, Woven, Jacquard, Machine Made",
+            "zh": "圈绒、编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Commercial, Camping, Prayer",
+            "zh": "家用、旅行、车用、野餐、商用、露营、祈祷"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm",
+            "zh": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm/270X270cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "1000pcs",
+            "zh": "1000pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "20 days",
+            "zh": "20 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "90X10X10 cm",
+            "zh": "90X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1093,7 +4358,151 @@
         "https://s.alicdn.com/@sc04/kf/H59ba2bed79534b5ebeccdd83b2a84dd35/Outdoor-Large-Reversible-Woven-Polypropylene-Sand-Proof.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "PP",
+            "zh": "PP"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Reversible Material",
+            "zh": "双面材质"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Easy Clean, Durable, Mildew Resistant",
+            "zh": "易清洁、耐用、防霉"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "OEM",
+            "zh": "OEM"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Certificate",
+            "zh": "认证"
+          },
+          "v": {
+            "en": "BSCI",
+            "zh": "BSCI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Sample",
+            "zh": "样品"
+          },
+          "v": {
+            "en": "Support Sample Service",
+            "zh": "支持样品服务"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Foldable Hiking Camping Beach Blanket Mat",
+            "zh": "Foldable Hiking Camping Beach Blanket Mat"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90*150cm, 120*180cm, 150*240cm, Customized",
+            "zh": "90*150cm、120*180cm、150*240cm、定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "1000pcs",
+            "zh": "1000pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "40 days",
+            "zh": "40 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "50X30X10 cm",
+            "zh": "50X30X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "5.590 kg",
+            "zh": "5.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1111,7 +4520,206 @@
         "https://s.alicdn.com/@sc04/kf/H195e1d7739014c8480014c4126b4bbb06/Waterproof-Modern-Geometric-Washable-Reversible-Area-Rugs.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Eco-Friendly, Washable, Reversible, Stain Resistant, Non-Slip, Pet Friendly",
+            "zh": "环保、可水洗、双面可逆、防污、防滑、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "2mm",
+            "zh": "2mm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Flat Pile",
+            "zh": "平绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard",
+            "zh": "编织、提花"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Care instructions",
+            "zh": "护理说明"
+          },
+          "v": {
+            "en": "Hand Wash",
+            "zh": "手洗"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AYS",
+            "zh": "AYS"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Camping, Prayer",
+            "zh": "家用、旅行、车用、野餐、露营、祈祷"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90*180cm",
+            "zh": "90*180cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "35 days",
+            "zh": "35 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "93X10X10 cm",
+            "zh": "93X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "2.000 kg",
+            "zh": "2.000 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1129,7 +4737,96 @@
         "https://s.alicdn.com/@sc04/kf/H13b408ca19e147269d1cc276404bff10a/Beach-Mat-Factory-Wholesale-Folded-pp-Mat.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "PP",
+            "zh": "PP"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Square",
+            "zh": "方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Portable, Foldable, Eco-Friendly, Lightweight",
+            "zh": "便携、可折叠、环保、轻便"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Bedroom, Beach, Hotel, Home",
+            "zh": "卧室、沙滩、酒店、家用"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1147,7 +4844,173 @@
         "https://s.alicdn.com/@sc04/kf/H37ae2d2580fc4ec6820a16f613252e94n/Zhejiang-Suppliers-Outdoor-pp-Carpet-Plastic-Floor.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Pet Friendly",
+            "zh": "可水洗、双面可逆、防污、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Loop Pile, Woven, Jacquard, Machine Made",
+            "zh": "圈绒、编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Travel, Picnic, Camping",
+            "zh": "旅行、野餐、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1165,7 +5028,151 @@
         "https://s.alicdn.com/@sc04/kf/H8136db169fbf435d856eb05bb9d051218/Plastic-Waterproof-Lightweight-Rolled-Reversible-Outdoor-Rug.png"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Eco-Friendly",
+            "zh": "可水洗、双面可逆、环保"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Woven",
+            "zh": "编织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard",
+            "zh": "编织、提花"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "China",
+            "zh": "中国"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Picnic, Outdoor, Camping",
+            "zh": "野餐、户外、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90x180cm",
+            "zh": "90x180cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1183,7 +5190,250 @@
         "https://s.alicdn.com/@sc04/kf/Hbb73fc4fce704f1f883b5d1682020c67h/High-quality-Recycled-Polypropylene-Jacquard-Washable-Machine.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Eco-Friendly, Anti-Bacteria, Washable, Reversible",
+            "zh": "环保、抗菌、可水洗、双面可逆"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "Thin (0.2-0.4 in.)",
+            "zh": "Thin (0.2-0.4 in.)"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Square",
+            "zh": "方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Abstract",
+            "zh": "抽象"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Braided, Machine Made",
+            "zh": "编织、提花、绞编、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Care instructions",
+            "zh": "护理说明"
+          },
+          "v": {
+            "en": "Dry in Shade",
+            "zh": "阴干"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Flat Pile",
+            "zh": "平绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Certificate",
+            "zh": "认证"
+          },
+          "v": {
+            "en": "BSCI, EN71",
+            "zh": "BSCI、EN71"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Logo",
+            "zh": "LOGO"
+          },
+          "v": {
+            "en": "Accept Customized Logo",
+            "zh": "接受定制LOGO"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Sample",
+            "zh": "样品"
+          },
+          "v": {
+            "en": "Support Sample Service",
+            "zh": "支持样品服务"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Travel, Home, Picnic, Commercial, Camping",
+            "zh": "旅行、家用、野餐、商用、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "3x5ft/4x6ft",
+            "zh": "3x5ft/4x6ft"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "500pcs",
+            "zh": "500pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "31 Days",
+            "zh": "31 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "153X37X49 cm",
+            "zh": "153X37X49 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "16.100 kg",
+            "zh": "16.100 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1201,7 +5451,162 @@
         "https://s.alicdn.com/@sc04/kf/He1f95ddddc31410391f61359b604bac8D/100-pp-Foldable-Beach-Mat-Picnic-Mat.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Stain Resistant, Foldable, Waterproof",
+            "zh": "可水洗、防污、可折叠、防水"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Woven",
+            "zh": "编织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard",
+            "zh": "编织、提花"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Picnic, Camping",
+            "zh": "野餐、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm",
+            "zh": "90X150cm/90x180cm/120X180cm/150x210cm/180x270cm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1219,7 +5624,162 @@
         "https://s.alicdn.com/@sc04/kf/H6a449e5f67824f4d9add6079fda318a2x/Recyclable-Red-PP-Flooring-Plastic-Foldable-Outdoor.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant, Wrinkle-Resistant",
+            "zh": "可水洗、双面可逆、防污、抗皱"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard",
+            "zh": "编织、提花"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Picnic, Camping",
+            "zh": "家用、旅行、野餐、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "3'x5', 4'x6', 3'x6'",
+            "zh": "3'x5'、4'x6'、3'x6'"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "1000pcs",
+            "zh": "1000pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "20 days",
+            "zh": "20 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "90X10X10 cm",
+            "zh": "90X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1237,7 +5797,162 @@
         "https://s.alicdn.com/@sc04/kf/H41d1e2d5501543e7828626699dc05d2aF/Woven-Floor-Mats-Sheet-Pp-Large-Plastic.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Stain Resistant, Waterproof, Fade-resistant, Anti-slip, Mold Resistant",
+            "zh": "可水洗、防污、防水、防褪色、防滑、防霉"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Rectangle",
+            "zh": "长方形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard",
+            "zh": "编织、提花"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Picnic",
+            "zh": "家用、野餐"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "1000pcs",
+            "zh": "1000pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1255,7 +5970,217 @@
         "https://s.alicdn.com/@sc04/kf/H68fd1704c45d43acba1e4e4b7abe71f9v/AIYISI-Customizable-Polypropylene-Woven-Machine-Made-Eco.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Stain Resistant, Non-Slip, Eco-Friendly, Reversible, Pet Friendly",
+            "zh": "可水洗、防污、防滑、环保、双面可逆、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "Thin (0.2-0.4 in.)",
+            "zh": "Thin (0.2-0.4 in.)"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Round",
+            "zh": "圆形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Machine Made, Jacquard, Braided",
+            "zh": "编织、机织、提花、绞编"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Care instructions",
+            "zh": "护理说明"
+          },
+          "v": {
+            "en": "Hand Wash",
+            "zh": "手洗"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Low Pile",
+            "zh": "低绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Picnic, Camping",
+            "zh": "家用、旅行、野餐、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Diameter 180cm/6ft",
+            "zh": "Diameter 180cm/6ft"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "100pcs",
+            "zh": "100pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "35 days",
+            "zh": "35 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1273,7 +6198,217 @@
         "https://s.alicdn.com/@sc04/kf/H06a8758f51034cb98f0a7def9c7ff4b8J/Polypropylene-Braided-Eco-Friendly-Woven-Outdoor-Rug.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Stain Resistant, Non-Slip, Eco-Friendly, Reversible, Pet Friendly",
+            "zh": "可水洗、防污、防滑、环保、双面可逆、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "Thin (0.2-0.4 in.)",
+            "zh": "Thin (0.2-0.4 in.)"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Round",
+            "zh": "圆形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Leaf",
+            "zh": "树叶"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Machine Made",
+            "zh": "编织、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Care instructions",
+            "zh": "护理说明"
+          },
+          "v": {
+            "en": "Hand Wash",
+            "zh": "手洗"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Low Pile",
+            "zh": "低绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Picnic, Camping",
+            "zh": "家用、旅行、野餐、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Diameter 180cm/6ft",
+            "zh": "Diameter 180cm/6ft"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "200pcs",
+            "zh": "200pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "35 days",
+            "zh": "35 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1291,7 +6426,206 @@
         "https://s.alicdn.com/@sc04/kf/H0fc8d36b0e5b49c3b78c6073d0fe273eS/Waterproof-Indoor-Outdoor-Reversible-Area-Rugs-6ft.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Reversible, Stain Resistant, Pet Friendly",
+            "zh": "双面可逆、防污、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "4mm",
+            "zh": "4mm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Round",
+            "zh": "圆形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Machine Made",
+            "zh": "编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Flat Pile",
+            "zh": "平绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Commercial, Camping",
+            "zh": "家用、旅行、车用、野餐、商用、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "6' Round / 8' Round",
+            "zh": "6' Round / 8' Round"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "200pcs",
+            "zh": "200pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "31 days",
+            "zh": "31 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "40X30X50 cm",
+            "zh": "40X30X50 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "9.590 kg",
+            "zh": "9.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1309,7 +6643,206 @@
         "https://s.alicdn.com/@sc04/kf/H33ff825642764761b44bef3c72cb3740O/Reversible-Indoor-Outdoor-UV-Resistant-Plastic-Straws.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Reversible, Stain Resistant, Pet Friendly",
+            "zh": "双面可逆、防污、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "4mm",
+            "zh": "4mm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Round",
+            "zh": "圆形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Machine Made",
+            "zh": "编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Flat Pile",
+            "zh": "平绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Commercial, Camping",
+            "zh": "家用、旅行、车用、野餐、商用、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "8' Round",
+            "zh": "8' Round"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "200pcs",
+            "zh": "200pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "31 days",
+            "zh": "31 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "40X30X50 cm",
+            "zh": "40X30X50 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "9.590 kg",
+            "zh": "9.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1327,7 +6860,206 @@
         "https://s.alicdn.com/@sc04/kf/He0595baf446b43dba726e0c166e9a9b7T/Bohemian-Mandala-Round-Mat-for-Home-Travel.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Reversible, Stain Resistant, Pet Friendly",
+            "zh": "双面可逆、防污、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "4mm",
+            "zh": "4mm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Round",
+            "zh": "圆形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Machine Made",
+            "zh": "编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Flat Pile",
+            "zh": "平绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Commercial, Camping",
+            "zh": "家用、旅行、车用、野餐、商用、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "200pcs",
+            "zh": "200pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "30 days",
+            "zh": "30 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "40X30X50 cm",
+            "zh": "40X30X50 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "9.590 kg",
+            "zh": "9.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1345,7 +7077,206 @@
         "https://s.alicdn.com/@sc04/kf/H8a3abbebfb354b9b988d8fc60f41858cK/Modern-Blue-and-White-Geometric-Pattern-Jacquard.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Reversible, Stain Resistant, Pet Friendly",
+            "zh": "双面可逆、防污、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "4mm",
+            "zh": "4mm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Round",
+            "zh": "圆形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Machine Made",
+            "zh": "编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Flat Pile",
+            "zh": "平绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Commercial, Camping",
+            "zh": "家用、旅行、车用、野餐、商用、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "200pcs",
+            "zh": "200pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "30 days",
+            "zh": "30 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "40X30X50 cm",
+            "zh": "40X30X50 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "9.590 kg",
+            "zh": "9.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1363,7 +7294,206 @@
         "https://s.alicdn.com/@sc04/kf/Hfb2c0445521e492a82b556307bc2f0e0d/Tropical-Escape-Round-Beach-Mat-Blue-Mandala.png"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Backing",
+            "zh": "背衬"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Reversible, Stain Resistant, Pet Friendly",
+            "zh": "双面可逆、防污、宠物友好"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Product Thickness",
+            "zh": "厚度"
+          },
+          "v": {
+            "en": "4mm",
+            "zh": "4mm"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Round",
+            "zh": "圆形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "pattern",
+            "zh": "图案"
+          },
+          "v": {
+            "en": "Geometric",
+            "zh": "几何"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard, Machine Made",
+            "zh": "编织、提花、机织"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Pile Height",
+            "zh": "绒高"
+          },
+          "v": {
+            "en": "Flat Pile",
+            "zh": "平绒"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Home, Travel, Car, Picnic, Commercial, Camping",
+            "zh": "家用、旅行、车用、野餐、商用、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "Customized",
+            "zh": "定制"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "200pcs",
+            "zh": "200pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "30 days",
+            "zh": "30 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "40X30X50 cm",
+            "zh": "40X30X50 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "9.590 kg",
+            "zh": "9.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1381,7 +7511,162 @@
         "https://s.alicdn.com/@sc04/kf/H9c807a3cb8b840fab6d775fc67cbc22aX/Luxury-Round-Carpet-reversible-Mat-Woven-Recycled.jpg"
       ],
       "video": "",
-      "specs": [],
+      "specs": [
+        {
+          "g": "basic",
+          "k": {
+            "en": "material",
+            "zh": "材质"
+          },
+          "v": {
+            "en": "Polypropylene",
+            "zh": "聚丙烯"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "feature",
+            "zh": "特性"
+          },
+          "v": {
+            "en": "Washable, Reversible, Stain Resistant",
+            "zh": "可水洗、双面可逆、防污"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "shape",
+            "zh": "形状"
+          },
+          "v": {
+            "en": "Round",
+            "zh": "圆形"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "style",
+            "zh": "风格"
+          },
+          "v": {
+            "en": "Modern",
+            "zh": "现代"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "technics",
+            "zh": "工艺"
+          },
+          "v": {
+            "en": "Woven, Jacquard",
+            "zh": "编织、提花"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "place of origin",
+            "zh": "产地"
+          },
+          "v": {
+            "en": "Zhejiang, China",
+            "zh": "中国 浙江"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "brand name",
+            "zh": "品牌"
+          },
+          "v": {
+            "en": "AIYISI",
+            "zh": "AIYISI"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Use",
+            "zh": "用途"
+          },
+          "v": {
+            "en": "Golf, Home, Travel, Picnic, Camping",
+            "zh": "高尔夫、家用、旅行、野餐、露营"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Size",
+            "zh": "尺寸"
+          },
+          "v": {
+            "en": "180x90cm/6x3ft, 180x270cm/6x9ft, 150x210cm/5x7ft, 270x360cm/9x12ft",
+            "zh": "180x90cm/6x3ft、180x270cm/6x9ft、150x210cm/5x7ft、270x360cm/9x12ft"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "MOQ",
+            "zh": "起订量"
+          },
+          "v": {
+            "en": "1000pcs",
+            "zh": "1000pcs"
+          }
+        },
+        {
+          "g": "basic",
+          "k": {
+            "en": "Delivery time",
+            "zh": "交货时间"
+          },
+          "v": {
+            "en": "25 days",
+            "zh": "25 天"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Selling Units",
+            "zh": "销售单位"
+          },
+          "v": {
+            "en": "Single item",
+            "zh": "单件"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single package size",
+            "zh": "单件包装尺寸"
+          },
+          "v": {
+            "en": "92X10X10 cm",
+            "zh": "92X10X10 cm"
+          }
+        },
+        {
+          "g": "packaging",
+          "k": {
+            "en": "Single gross weight",
+            "zh": "单件毛重"
+          },
+          "v": {
+            "en": "0.590 kg",
+            "zh": "0.590 kg"
+          }
+        }
+      ],
       "desc": {
         "en": "",
         "zh": ""
@@ -1780,6 +8065,6 @@
       }
     }
   ],
-  "_updated": "2026-06-26T00:52:54.462237+00:00",
+  "_updated": "2026-06-26T00:58:22.510258+00:00",
   "_schema": "v4-full-bilingual"
 }
