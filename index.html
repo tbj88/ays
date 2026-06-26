@@ -113,6 +113,46 @@
   .speceditrow{display:flex;gap:8px;margin-bottom:8px}
   .speceditrow input{flex:1}
   .speceditrow .rm{background:var(--danger);color:#fff;border:none;border-radius:7px;padding:0 12px;cursor:pointer}
+  /* === Hero 大图区(YETI 风) === */
+  .yhero{position:relative;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-top:-26px;margin-bottom:40px;height:560px;overflow:hidden;background:#0F2C4D}
+  .yhero img{width:100%;height:100%;object-fit:cover;opacity:.88}
+  .yhero .overlay{position:absolute;inset:0;background:linear-gradient(to right, rgba(15,44,77,.75) 0%, rgba(15,44,77,.45) 50%, rgba(15,44,77,.15) 100%);display:flex;align-items:center}
+  .yhero .inner{max-width:1240px;margin:0 auto;padding:0 22px;width:100%;color:#fff}
+  .yhero .kicker{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#3fc88c;font-weight:700;margin-bottom:14px}
+  .yhero h1{font-size:54px;line-height:1.1;font-weight:800;margin-bottom:18px;max-width:760px;letter-spacing:-1px}
+  .yhero .sub{font-size:18px;max-width:600px;opacity:.92;line-height:1.5;margin-bottom:24px}
+  .yhero .cta{display:inline-flex;gap:12px;flex-wrap:wrap}
+  .yhero .cta a{padding:14px 30px;border-radius:6px;font-weight:700;font-size:15px;text-decoration:none;transition:.2s;cursor:pointer}
+  .yhero .cta .primary{background:#D62828;color:#fff}.yhero .cta .primary:hover{background:#b81f1f}
+  .yhero .cta .ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}.yhero .cta .ghost:hover{background:rgba(255,255,255,.1)}
+  @media(max-width:768px){.yhero{height:420px}.yhero h1{font-size:32px}.yhero .sub{font-size:15px}}
+  /* === 数据成就横条 === */
+  .ystats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:40px}
+  .ystats .s{background:var(--panel);padding:26px 18px;text-align:center}
+  .ystats .s b{display:block;font-size:32px;color:#3fc88c;font-weight:800;letter-spacing:-1px;margin-bottom:6px}
+  .ystats .s span{font-size:12px;color:var(--txt2);text-transform:uppercase;letter-spacing:1.5px}
+  @media(max-width:600px){.ystats{grid-template-columns:repeat(2,1fr)}}
+  /* === 实力 4 卡片 === */
+  .ywhy{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:40px}
+  .ywhy .w{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px;transition:.2s}
+  .ywhy .w:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .ywhy .w .ic{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-size:22px;color:#06140d;margin-bottom:14px;font-weight:800}
+  .ywhy .w h4{font-size:15px;margin-bottom:6px;color:var(--txt)}
+  .ywhy .w p{font-size:13px;color:var(--txt2);line-height:1.5}
+  /* === 客户 Logo 墙 === */
+  .ylogos{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:30px;margin-bottom:30px}
+  .ylogos h3{font-size:13px;color:var(--txt2);text-transform:uppercase;letter-spacing:2.5px;text-align:center;margin-bottom:22px;font-weight:700}
+  .ylogos .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:30px;align-items:center}
+  .ylogos .row img{width:100%;max-height:55px;object-fit:contain;filter:grayscale(.5) brightness(1.1);opacity:.85;transition:.2s}
+  .ylogos .row img:hover{filter:none;opacity:1}
+  /* === 三大产品线分类 === */
+  .ycats{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:30px}
+  .ycats .c{position:relative;height:200px;border-radius:14px;overflow:hidden;cursor:pointer;border:1px solid var(--line)}
+  .ycats .c img{width:100%;height:100%;object-fit:cover;transition:.4s}
+  .ycats .c:hover img{transform:scale(1.08)}
+  .ycats .c .lbl{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7),rgba(0,0,0,.15) 60%);display:flex;align-items:flex-end;padding:20px;color:#fff}
+  .ycats .c .lbl h4{font-size:22px;font-weight:800;letter-spacing:-.5px}
+  .ycats .c .lbl span{display:block;font-size:12px;opacity:.85;text-transform:uppercase;letter-spacing:2px;margin-bottom:4px}
   @media(max-width:600px){.hero{padding:22px}.hero h2{font-size:21px}}
 </style>
 </head>
@@ -277,26 +317,80 @@ function buildNav(){
 /* ===== RENDER: HOME ===== */
 function renderHome(){
   const C=DB.company;
-  const cats=L(C.cats).split("|");
-  return `<div class="hero">
-    <h2>${esc(L(C.name))}</h2>
-    <div class="en">${esc(L(C.region))}</div>
-    <p>${esc(L(dynamicYears(C)))} ｜ ${esc(L(C.type))} ｜ ${esc(L(C.rank))}</p>
-    <div style="margin-top:14px">${cats.map(c=>`<span class="tag">${esc(c)}</span>`).join("")}</div>
-    <div class="stats">
-      <div class="stat"><b>${allProducts().length}</b><span>${T('stProducts')}</span></div>
-      <div class="stat"><b>${allScripts().length}</b><span>${T('stScripts')}</span></div>
-      <div class="stat"><b>5.0★</b><span>${T('stRating')}</span></div>
-      <div class="stat"><b>100%</b><span>${T('stOntime')}</span></div>
-      <div class="stat"><b>≤3h</b><span>${T('stResp')}</span></div>
-      <div class="stat"><b>25000m²</b><span>${T('stFloor')}</span></div>
-    </div>
+  const yrs=yearsSince(C.foundedDate||"");
+  // 取前 3 款带图的产品作为产品分类入口
+  const sampleProds=allProducts().filter(p=>p.images&&p.images[0]).slice(0,3);
+  const ZH=LANG==='zh';
+  const HERO_IMG="https://sc02.alicdn.com/kf/A4b151d010d3f47e9b17525400d6390d2B.png";
+  // 客户 Logo wikimedia 直链(海外稳定)
+  const LOGOS_TRUSTED=[
+    {name:"The Home Depot",url:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/TheHomeDepot.svg/800px-TheHomeDepot.svg.png"},
+    {name:"Lidl",url:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lidl-Logo.svg/800px-Lidl-Logo.svg.png"},
+    {name:"Aldi",url:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Aldi_S%C3%BCd_2017_logo.svg/800px-Aldi_S%C3%BCd_2017_logo.svg.png"},
+    {name:"Kmart",url:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Kmart_logo.svg/800px-Kmart_logo.svg.png"},
+    {name:"METRO",url:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_METRO.svg/800px-Logo_METRO.svg.png"},
+  ];
+  const LOGOS_TARGET=[
+    {name:"Costco",url:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Costco_Wholesale_logo_2010-10-26.svg/800px-Costco_Wholesale_logo_2010-10-26.svg.png"},
+    {name:"Target",url:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Target_logo.svg/800px-Target_logo.svg.png"},
+    {name:"Lowe's",url:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Lowes_Companies_Logo.svg/800px-Lowes_Companies_Logo.svg.png"},
+  ];
+  return `
+  <!-- HERO -->
+  <section class="yhero">
+    <img src="${HERO_IMG}" alt="">
+    <div class="overlay"><div class="inner">
+      <div class="kicker">${ZH?'12 年金牌工厂 · 服务全球零售巨头':'12-Year Gold Factory · Serving Global Retail Giants'}</div>
+      <h1>${ZH?'户外 PP 编织地垫专业制造商':'Outdoor PP Woven Rug Manufacturer'}</h1>
+      <p class="sub">${ZH?'专注双面可逆户外地垫 ODM 12 年，TÜV 认证，25,000m² 厂区，服务 Aldi · Lidl · The Home Depot · K-mart 等欧美连锁零售商。':'Specializing in reversible recycled-PP outdoor rugs for 12 years. TÜV certified, 25,000 m² plant. Trusted ODM partner of Aldi, Lidl, The Home Depot and K-mart.'}</p>
+      <div class="cta">
+        <a class="primary" onclick="show('products')">${ZH?'浏览产品目录':'Browse Catalog'}</a>
+        <a class="ghost" onclick="show('cases')">${ZH?'查看合作案例':'View Cases'}</a>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 数据成就横条 -->
+  <div class="ystats">
+    <div class="s"><b>${yrs||12} YRS</b><span>${ZH?'金牌供应商':'Gold Supplier'}</span></div>
+    <div class="s"><b>25,000m²</b><span>${ZH?'厂区面积':'Plant Area'}</span></div>
+    <div class="s"><b>100%</b><span>${ZH?'准时发货率':'On-Time Delivery'}</span></div>
+    <div class="s"><b>5.0★</b><span>${ZH?'店铺评分':'Store Rating'}</span></div>
   </div>
-  <div class="panel"><h3>${T('companyOverview')}</h3>
-    <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
-      ${[["founded",C.founded],["type",C.type],["staff",C.staff],["revenue",C.revenue],["rd",C.rd],["markets",C.markets],["response",C.response],["bigClients",C.bigClients]].map(([k,v])=>`<div class="manual-item qrow"><div class="a">${esc(L(v))}</div></div>`).join("")}
-    </div>
-  </div>`;
+
+  <!-- WHY 4 实力卡片 -->
+  <div style="text-align:center;margin-bottom:24px">
+    <h2 style="font-size:28px;letter-spacing:-.5px">${ZH?'为什么选择 AIYISI':'Why AIYISI'}</h2>
+    <p style="color:var(--txt2);font-size:14px;margin-top:6px">${ZH?'欧美商超供应链信赖的中国 ODM 工厂':'A trusted China ODM factory for global retail supply chains'}</p>
+  </div>
+  <div class="ywhy">
+    <div class="w"><div class="ic">★</div><h4>${ZH?'12 年金牌供应商':'12-Year Gold Supplier'}</h4><p>${ZH?'Alibaba 国际站 12 年金牌资历，TÜV Rheinland 认证。':'12-year Gold rank on Alibaba.com, TÜV Rheinland certified.'}</p></div>
+    <div class="w"><div class="ic">⚙</div><h4>${ZH?'200+ 套先进设备':'200+ Modern Machines'}</h4><p>${ZH?'25,000m² 厂区，机织+提花+绞编全工艺自有产能。':'25,000m² plant with woven, jacquard & braided in-house capacity.'}</p></div>
+    <div class="w"><div class="ic">✓</div><h4>${ZH?'100% 准时发货':'100% On-Time'}</h4><p>${ZH?'Trade Assurance 保障，≤3h 响应，96.39% 快速回复率。':'Trade Assurance protected, ≤3h response, 96.39% reply rate.'}</p></div>
+    <div class="w"><div class="ic">↻</div><h4>${ZH?'OEM/ODM 全定制':'Full OEM/ODM'}</h4><p>${ZH?'2 名研发工程师，支持图纸/打样定制，私标包装。':'2 R&D engineers, drawing/sample-based customization, private label.'}</p></div>
+  </div>
+
+  <!-- 三大产品线分类入口 -->
+  <div style="text-align:center;margin:50px 0 24px">
+    <h2 style="font-size:28px;letter-spacing:-.5px">${ZH?'核心产品线':'Core Product Lines'}</h2>
+    <p style="color:var(--txt2);font-size:14px;margin-top:6px">${ZH?'三大主营品类，已服务 100+ 海外采购商':'Three core categories, serving 100+ overseas buyers'}</p>
+  </div>
+  <div class="ycats">
+    ${sampleProds[0]?`<div class="c" onclick="show('products');setTimeout(()=>{const i=document.getElementById('psearch');if(i){i.value='RV';filterProducts('RV');}},300)"><img src="${esc(sampleProds[0].images[0])}"><div class="lbl"><div><span>${ZH?'露营/房车':'Camping/RV'}</span><h4>RV & Camping Mats</h4></div></div></div>`:''}
+    ${sampleProds[1]?`<div class="c" onclick="show('products');setTimeout(()=>{const i=document.getElementById('psearch');if(i){i.value='patio';filterProducts('patio');}},300)"><img src="${esc(sampleProds[1].images[0])}"><div class="lbl"><div><span>${ZH?'庭院/露台':'Garden/Patio'}</span><h4>Patio & Outdoor Rugs</h4></div></div></div>`:''}
+    ${sampleProds[2]?`<div class="c" onclick="show('products');setTimeout(()=>{const i=document.getElementById('psearch');if(i){i.value='beach';filterProducts('beach');}},300)"><img src="${esc(sampleProds[2].images[0])}"><div class="lbl"><div><span>${ZH?'沙滩/野餐':'Beach/Picnic'}</span><h4>Beach & Picnic Mats</h4></div></div></div>`:''}
+  </div>
+
+  <!-- 客户 Logo 矩阵 -->
+  <div class="ylogos">
+    <h3>${ZH?'我们服务过的客户':'Our Trusted Customers'}</h3>
+    <div class="row">${LOGOS_TRUSTED.map(l=>`<img src="${l.url}" alt="${l.name}" title="${l.name}" onerror="this.style.display='none'">`).join("")}</div>
+  </div>
+  <div class="ylogos">
+    <h3>${ZH?'我们正在寻找的合作伙伴':'Target Partners We Are Looking For'}</h3>
+    <div class="row">${LOGOS_TARGET.map(l=>`<img src="${l.url}" alt="${l.name}" title="${l.name}" onerror="this.style.display='none'">`).join("")}</div>
+  </div>
+  `;
 }
 
 /* ===== RENDER: IDENTITY / INTEL / BRAND (qrow lists) ===== */
