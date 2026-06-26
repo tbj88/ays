@@ -77,17 +77,13 @@
       "d": {
         "en": "Supplier certified by TÜV Rheinland (the 'by TÜVRheinland' mark on the store homepage).",
         "zh": "由 TÜV Rheinland 颁发的供应商认证（店铺首页 by TÜVRheinland 标识）。"
-      }
-    },
-    {
-      "id": "C-002",
-      "t": {
-        "en": "Trade Assurance",
-        "zh": "Trade Assurance 贸易保障"
       },
-      "d": {
-        "en": "100% protection on product quality and on-time shipment, with secure payment and money-back policy.",
-        "zh": "100% 产品质量与准时发货保障，支持安全付款与退款政策。"
+      "verify": {
+        "url": "https://www.certipedia.com/",
+        "label": {
+          "en": "Verify on TÜV Rheinland",
+          "zh": "在 TÜV Rheinland 查询"
+        }
       }
     },
     {
@@ -99,6 +95,13 @@
       "d": {
         "en": "Factory verified by third-party onsite check; legal status confirmed by an independent verification company.",
         "zh": "工厂已通过第三方机构实地核验（Onsite Check），法人资质经独立机构确认。"
+      },
+      "verify": {
+        "url": "https://www.sgs.com.cn/",
+        "label": {
+          "en": "Independent verification info",
+          "zh": "独立机构核验信息"
+        }
       }
     },
     {
@@ -110,6 +113,13 @@
       "d": {
         "en": "Selected large RV awning rugs are CE Certified for the European market.",
         "zh": "部分大尺寸 RV 雨棚地垫产品已标注 CE 欧洲市场认证。"
+      },
+      "verify": {
+        "url": "https://ec.europa.eu/growth/single-market/ce-marking_en",
+        "label": {
+          "en": "About CE marking (EU)",
+          "zh": "了解欧盟 CE 标准"
+        }
       }
     },
     {
@@ -121,6 +131,13 @@
       "d": {
         "en": "Made of Recycled Polypropylene with raw-material identification and traceability.",
         "zh": "主打再生 PP 环保材质，支持原材料识别与可追溯。"
+      },
+      "verify": {
+        "url": "https://www.iso.org/standard/76519.html",
+        "label": {
+          "en": "ISO recycled plastic standard",
+          "zh": "ISO 再生塑料标准"
+        }
       }
     },
     {
@@ -132,6 +149,13 @@
       "d": {
         "en": "Full QC: incoming material inspection, finished-product inspection, material traceability.",
         "zh": "提供来料检验、成品检验、原材料识别与追溯等全流程质控服务。"
+      },
+      "verify": {
+        "url": "https://www.intertek.com/",
+        "label": {
+          "en": "Quality control standards",
+          "zh": "质量控制标准"
+        }
       }
     },
     {
@@ -143,6 +167,67 @@
       "d": {
         "en": "Drawing-based & sample-based customization; full OEM/ODM service.",
         "zh": "支持图纸定制与打样定制，全定制 + ODM 服务。"
+      },
+      "verify": {
+        "url": "https://www.tzaiyisi.com",
+        "label": {
+          "en": "OEM/ODM service inquiry",
+          "zh": "OEM/ODM 定制咨询"
+        }
+      }
+    },
+    {
+      "id": "C-008",
+      "t": {
+        "en": "National High-Tech Enterprise",
+        "zh": "国家/省级高新技术企业"
+      },
+      "d": {
+        "en": "Government-certified High-Tech Enterprise. Verifiable on China Ministry of Science and Technology platform.",
+        "zh": "国家/省级高新技术企业认定。可在中国科技部官方平台查询。"
+      },
+      "verify": {
+        "url": "https://www.most.gov.cn/",
+        "label": {
+          "en": "China MOST official",
+          "zh": "科技部官网"
+        }
+      }
+    },
+    {
+      "id": "C-009",
+      "t": {
+        "en": "9+ Patents (Design & Utility)",
+        "zh": "9+ 项国家专利"
+      },
+      "d": {
+        "en": "9+ design and utility model patents filed with China National Intellectual Property Administration (CNIPA). Searchable by company name.",
+        "zh": "国家知识产权局（CNIPA）登记的产品设计与实用新型专利 9+ 项，可按公司名称查询。"
+      },
+      "verify": {
+        "url": "https://pss-system.cponline.cnipa.gov.cn/",
+        "label": {
+          "en": "CNIPA patent search",
+          "zh": "国家知识产权局专利查询"
+        }
+      }
+    },
+    {
+      "id": "C-010",
+      "t": {
+        "en": "A-Grade Tax Credit",
+        "zh": "纳税信用 A 级企业"
+      },
+      "d": {
+        "en": "Top-grade A-rated tax credit by State Taxation Administration of China — reflects 100% compliance and reliability.",
+        "zh": "国家税务总局评定的最高 A 级纳税信用 —— 反映 100% 合规与可靠性。"
+      },
+      "verify": {
+        "url": "https://www.chinatax.gov.cn/",
+        "label": {
+          "en": "China State Taxation",
+          "zh": "国家税务总局"
+        }
       }
     }
   ],
@@ -8055,7 +8140,7 @@
       }
     }
   ],
-  "_updated": "2026-06-26T11:30:57.512728+00:00",
+  "_updated": "2026-06-26T11:36:30.217454+00:00",
   "_schema": "v4-full-bilingual",
   "cases": [
     {
