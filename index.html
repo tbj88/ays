@@ -285,7 +285,7 @@ function canViewInternal(){return isAdmin()||isStaff()}
 function esc(s){return(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
 function toast(m,e){const t=document.getElementById("toast");t.textContent=m;t.className="toast show"+(e?" err":"");setTimeout(()=>t.className="toast",e?3200:1800)}
 // 取双语字段：值可能是 {en,zh} 或纯字符串
-function L(v){if(v&&typeof v==="object")return v[LANG]||v.en||v.zh||"";return v||""}
+function L(v){if(v&&typeof v==="object"){return v[LANG]||v.en||v.zh||v.de||v.es||Object.values(v).find(x=>x)||"";}return v||""}
 /* 阿里国际站标准年限算法：当前年份 - 成立年份(只比较年份，不看月日)
  * 2014 成立 → 2026 显示 12 YRS(与阿里店铺 12YRS 标识完全一致)
  * 每年自然年元旦自动 +1 */
@@ -301,77 +301,111 @@ function dynamicYears(C){
   return y>0 ? {en:y+"-Year Gold Supplier",zh:y+" 年金牌供应商"} : (C&&C.years)||{en:"",zh:""};
 }
 
-/* ===== I18N (界面文案) ===== */
+/* ===== I18N (界面文案 — EN / 中 / DE / ES) ===== */
 const I18N={
-  home:{en:"Home",zh:"首页"},
-  identity:{en:"Certifications",zh:"认证资质"},
-  products:{en:"Catalog",zh:"产品目录"},
-  intel:{en:"Intel",zh:"情报/画像"},
-  scripts:{en:"Scripts",zh:"话术/SOP"},
-  brand:{en:"Brand",zh:"品牌资产"},
-  cases:{en:"Partner Brands",zh:"合作品牌"},
-  addCase:{en:"+ Add brand",zh:"+ 新增合作品牌"},
-  fairs:{en:"Trade Show Records",zh:"参展记录"},
-  fairEditions:{en:"Edition Records",zh:"参展届次"},
-  addEdition:{en:"+ Add edition",zh:"+ 新增参展记录"},
-  backToHome:{en:"← Back to home",zh:"← 返回首页"},
-  upcoming:{en:"Upcoming",zh:"即将参展"},
-  liveNow:{en:"Live Now",zh:"正在参展"},
-  past:{en:"Past",zh:"已参展"},
-  booth:{en:"Booth",zh:"展位"},
-  date:{en:"Date",zh:"日期"},
-  noEditions:{en:"No edition records yet.",zh:"暂无参展记录。"},
-  login:{en:"🔒 Admin",zh:"🔒 后台登录"},
-  logout:{en:"Logout",zh:"退出"},
-  adminmode:{en:"Admin mode",zh:"管理模式"},
-  staffLogin:{en:"🔑 Staff",zh:"🔑 员工登录"},
-  staffMode:{en:"Staff (read-only)",zh:"员工·只读"},
-  staffTitle:{en:"Staff Login",zh:"员工登录"},
-  staffDesc:{en:"Enter the staff password to view internal scripts & SOP (read-only).",zh:"输入员工密码即可查看内部话术/SOP（只读，不能修改）。"},
-  staffPwLabel:{en:"Staff Password",zh:"员工密码"},
-  searchProduct:{en:"Search product name / code...",zh:"搜索产品名称 / 编号..."},
-  searchScript:{en:"Search scripts / scene / code...",zh:"搜索话术 / 场景 / 编号..."},
-  items:{en:"items",zh:"款"},
-  rows:{en:"items",zh:"条"},
-  copy:{en:"Copy",zh:"复制"},
-  edit:{en:"Edit",zh:"编辑"},
-  del:{en:"Delete",zh:"删除"},
-  view:{en:"View details",zh:"查看详情"},
-  addProduct:{en:"+ Add product",zh:"+ 新增产品"},
-  addScript:{en:"+ Add script",zh:"+ 新增话术"},
-  addIntel:{en:"+ Add intel",zh:"+ 新增情报"},
-  addCert:{en:"+ Add certification",zh:"+ 新增资质"},
-  addBrand:{en:"+ Add brand item",zh:"+ 新增品牌项"},
-  back:{en:"← Back to products",zh:"← 返回产品列表"},
-  specs:{en:"Specifications",zh:"规格参数"},
-  basicInfo:{en:"Basic Info.",zh:"基本信息"},
-  packaging:{en:"Packaging & Delivery",zh:"包装与配送"},
-  grpBasic:{en:"Basic Info",zh:"基本信息"},
-  grpPack:{en:"Packaging",zh:"包装配送"},
-  grpDesc:{en:"Description params",zh:"描述参数"},
-  desc:{en:"Description",zh:"产品描述"},
-  video:{en:"Product Video",zh:"产品视频"},
-  noSpec:{en:"No specifications yet.",zh:"暂无规格参数。"},
-  noDesc:{en:"No description yet.",zh:"暂无产品描述。"},
-  price:{en:"Price",zh:"价格"},
-  moq:{en:"MOQ",zh:"起订量"},
-  inquiry:{en:"Inquire",zh:"询价"},
-  companyOverview:{en:"Company Overview",zh:"公司速览"},
-  dataSource:{en:"Source",zh:"数据来源"},
-  adminTip:{en:" · Admin mode: edit/delete each item",zh:" · 管理模式：可编辑/删除每一条"},
-  uploadImg:{en:"Click or drag images here to upload",zh:"点击或拖拽图片到此上传"},
-  saving:{en:"Saving to server…",zh:"正在保存到服务器…"},
-  saved:{en:"Saved. Clients see it after refresh.",zh:"已保存，客户刷新即可见。"},
-  uploading:{en:"Uploading image…",zh:"正在上传图片…"},
+  home:{en:"Home",zh:"首页",de:"Startseite",es:"Inicio"},
+  identity:{en:"Certifications",zh:"认证资质",de:"Zertifikate",es:"Certificaciones"},
+  products:{en:"Catalog",zh:"产品目录",de:"Katalog",es:"Catálogo"},
+  intel:{en:"Intel",zh:"情报/画像",de:"Insights",es:"Inteligencia"},
+  scripts:{en:"Scripts",zh:"话术/SOP",de:"Skripte/SOP",es:"Guiones/SOP"},
+  brand:{en:"Brand",zh:"品牌资产",de:"Marke",es:"Marca"},
+  cases:{en:"Partner Brands",zh:"合作品牌",de:"Partnermarken",es:"Marcas Asociadas"},
+  addCase:{en:"+ Add brand",zh:"+ 新增合作品牌",de:"+ Marke hinzufügen",es:"+ Añadir marca"},
+  fairs:{en:"Trade Show Records",zh:"参展记录",de:"Messeauftritte",es:"Ferias Comerciales"},
+  fairEditions:{en:"Edition Records",zh:"参展届次",de:"Ausgaben",es:"Ediciones"},
+  addEdition:{en:"+ Add edition",zh:"+ 新增参展记录",de:"+ Ausgabe hinzufügen",es:"+ Añadir edición"},
+  backToHome:{en:"← Back to home",zh:"← 返回首页",de:"← Zurück zur Startseite",es:"← Volver al inicio"},
+  upcoming:{en:"Upcoming",zh:"即将参展",de:"Bevorstehend",es:"Próximamente"},
+  liveNow:{en:"Live Now",zh:"正在参展",de:"Live",es:"En vivo"},
+  past:{en:"Past",zh:"已参展",de:"Vergangen",es:"Pasado"},
+  booth:{en:"Booth",zh:"展位",de:"Stand",es:"Stand"},
+  date:{en:"Date",zh:"日期",de:"Datum",es:"Fecha"},
+  noEditions:{en:"No edition records yet.",zh:"暂无参展记录。",de:"Noch keine Ausgaben.",es:"Aún no hay ediciones."},
+  login:{en:"🔒 Admin",zh:"🔒 后台登录",de:"🔒 Admin",es:"🔒 Admin"},
+  logout:{en:"Logout",zh:"退出",de:"Abmelden",es:"Salir"},
+  adminmode:{en:"Admin mode",zh:"管理模式",de:"Admin-Modus",es:"Modo admin"},
+  staffLogin:{en:"🔑 Staff",zh:"🔑 员工登录",de:"🔑 Mitarbeiter",es:"🔑 Personal"},
+  staffMode:{en:"Staff (read-only)",zh:"员工·只读",de:"Mitarbeiter (Lesen)",es:"Personal (solo lect.)"},
+  staffTitle:{en:"Staff Login",zh:"员工登录",de:"Mitarbeiter-Login",es:"Acceso Personal"},
+  staffDesc:{en:"Enter the staff password to view internal scripts & SOP (read-only).",zh:"输入员工密码即可查看内部话术/SOP（只读，不能修改）。",de:"Passwort eingeben, um interne Skripte & SOP anzuzeigen (Lesen).",es:"Introduce la contraseña para ver guiones y SOP internos (solo lectura)."},
+  staffPwLabel:{en:"Staff Password",zh:"员工密码",de:"Mitarbeiter-Passwort",es:"Contraseña"},
+  searchProduct:{en:"Search product name / code...",zh:"搜索产品名称 / 编号...",de:"Produkt / Code suchen…",es:"Buscar producto / código…"},
+  searchScript:{en:"Search scripts / scene / code...",zh:"搜索话术 / 场景 / 编号...",de:"Skript / Szene / Code suchen…",es:"Buscar guion / escena / código…"},
+  items:{en:"items",zh:"款",de:"Stk.",es:"items"},
+  rows:{en:"items",zh:"条",de:"Einträge",es:"items"},
+  copy:{en:"Copy",zh:"复制",de:"Kopieren",es:"Copiar"},
+  edit:{en:"Edit",zh:"编辑",de:"Bearbeiten",es:"Editar"},
+  del:{en:"Delete",zh:"删除",de:"Löschen",es:"Eliminar"},
+  view:{en:"View details",zh:"查看详情",de:"Details ansehen",es:"Ver detalles"},
+  addProduct:{en:"+ Add product",zh:"+ 新增产品",de:"+ Produkt hinzufügen",es:"+ Añadir producto"},
+  addScript:{en:"+ Add script",zh:"+ 新增话术",de:"+ Skript hinzufügen",es:"+ Añadir guion"},
+  addIntel:{en:"+ Add intel",zh:"+ 新增情报",de:"+ Insight hinzufügen",es:"+ Añadir info"},
+  addCert:{en:"+ Add certification",zh:"+ 新增资质",de:"+ Zertifikat hinzufügen",es:"+ Añadir certificación"},
+  addBrand:{en:"+ Add brand item",zh:"+ 新增品牌项",de:"+ Markenpunkt hinzufügen",es:"+ Añadir ítem de marca"},
+  back:{en:"← Back to products",zh:"← 返回产品列表",de:"← Zurück zum Katalog",es:"← Volver al catálogo"},
+  specs:{en:"Specifications",zh:"规格参数",de:"Spezifikationen",es:"Especificaciones"},
+  basicInfo:{en:"Basic Info.",zh:"基本信息",de:"Basisdaten",es:"Datos básicos"},
+  packaging:{en:"Packaging & Delivery",zh:"包装与配送",de:"Verpackung & Versand",es:"Embalaje y entrega"},
+  grpBasic:{en:"Basic Info",zh:"基本信息",de:"Basisdaten",es:"Datos básicos"},
+  grpPack:{en:"Packaging",zh:"包装配送",de:"Verpackung",es:"Embalaje"},
+  grpDesc:{en:"Description params",zh:"描述参数",de:"Beschreibungsparameter",es:"Parámetros de descripción"},
+  desc:{en:"Description",zh:"产品描述",de:"Beschreibung",es:"Descripción"},
+  video:{en:"Product Video",zh:"产品视频",de:"Produktvideo",es:"Vídeo del producto"},
+  noSpec:{en:"No specifications yet.",zh:"暂无规格参数。",de:"Noch keine Spezifikationen.",es:"Sin especificaciones aún."},
+  noDesc:{en:"No description yet.",zh:"暂无产品描述。",de:"Noch keine Beschreibung.",es:"Sin descripción aún."},
+  price:{en:"Price",zh:"价格",de:"Preis",es:"Precio"},
+  moq:{en:"MOQ",zh:"起订量",de:"Mindestmenge",es:"Pedido mínimo"},
+  inquiry:{en:"Inquire",zh:"询价",de:"Anfragen",es:"Consultar"},
+  companyOverview:{en:"Company Overview",zh:"公司速览",de:"Unternehmensprofil",es:"Resumen de la empresa"},
+  dataSource:{en:"Source",zh:"数据来源",de:"Quelle",es:"Fuente"},
+  adminTip:{en:" · Admin mode: edit/delete each item",zh:" · 管理模式：可编辑/删除每一条",de:" · Admin-Modus: jedes Element bearbeiten/löschen",es:" · Modo admin: editar/eliminar cada ítem"},
+  uploadImg:{en:"Click or drag images here to upload",zh:"点击或拖拽图片到此上传",de:"Bilder anklicken oder hierher ziehen",es:"Haz clic o arrastra imágenes aquí"},
+  saving:{en:"Saving to server…",zh:"正在保存到服务器…",de:"Speichere auf Server…",es:"Guardando en el servidor…"},
+  saved:{en:"Saved. Clients see it after refresh.",zh:"已保存，客户刷新即可见。",de:"Gespeichert. Sichtbar nach Aktualisierung.",es:"Guardado. Visible tras actualizar."},
+  uploading:{en:"Uploading image…",zh:"正在上传图片…",de:"Bild wird hochgeladen…",es:"Subiendo imagen…"},
   // stats labels
-  stProducts:{en:"Products",zh:"在库产品"},
-  stScripts:{en:"Scripts",zh:"销售话术"},
-  stRating:{en:"Store rating",zh:"店铺评分"},
-  stOntime:{en:"On-time delivery",zh:"准时发货率"},
-  stResp:{en:"Response",zh:"询盘响应"},
-  stFloor:{en:"Floor area",zh:"厂区面积"},
+  stProducts:{en:"Products",zh:"在库产品",de:"Produkte",es:"Productos"},
+  stScripts:{en:"Scripts",zh:"销售话术",de:"Skripte",es:"Guiones"},
+  stRating:{en:"Store rating",zh:"店铺评分",de:"Shop-Bewertung",es:"Valoración"},
+  stOntime:{en:"On-time delivery",zh:"准时发货率",de:"Pünktl. Lieferung",es:"Entrega a tiempo"},
+  stResp:{en:"Response",zh:"询盘响应",de:"Antwortzeit",es:"Respuesta"},
+  stFloor:{en:"Floor area",zh:"厂区面积",de:"Werksfläche",es:"Superficie"},
+  // 内联文案（替代 LANG==='zh'?A:B）
+  certSub:{en:'All certifications can be verified at the issuing authority — click "Verify" to visit the official source.',zh:'所有认证均可在颁发机构官方网站验证真伪 —— 点击「官方查询」即可跳转。',de:'Alle Zertifikate sind bei der ausstellenden Stelle verifizierbar — auf „Verify" klicken.',es:'Todas las certificaciones se pueden verificar en el emisor — pulsa "Verify".'},
+  internalOnly:{en:"Internal only",zh:"内部资料",de:"Nur intern",es:"Solo interno"},
+  intelSub:{en:"Customer structure, market profile, purchase keywords.",zh:"客户结构、市场画像、采购决策关键词。",de:"Kundenstruktur, Marktprofil, Einkaufs-Keywords.",es:"Estructura de clientes, perfil de mercado, palabras clave."},
+  brandSub:{en:"Positioning, categories, markets & endorsements.",zh:"品牌定位、核心品类、市场与背书。",de:"Positionierung, Kategorien, Märkte & Referenzen.",es:"Posicionamiento, categorías, mercados y avales."},
+  casesSub:{en:"Long-term partnerships with global retail brands.",zh:"与全球零售品牌的长期合作。",de:"Langfristige Partnerschaften mit globalen Einzelhändlern.",es:"Asociaciones a largo plazo con marcas minoristas globales."},
+  scriptsSub:{en:"B2B sales scripts, click to copy.",zh:"B2B 销售全流程话术，点复制即用。",de:"B2B-Verkaufsskripte, zum Kopieren klicken.",es:"Guiones de venta B2B, haz clic para copiar."},
+  productsSub:{en:"Click any product for photos, specs & video.",zh:"点击任意产品查看多图、规格参数与视频。",de:"Klicke auf ein Produkt für Fotos, Spezifikationen & Video.",es:"Haz clic en un producto para ver fotos, especificaciones y vídeo."},
+  scene:{en:"Scene",zh:"场景",de:"Szene",es:"Escena"},
+  uploadDetail:{en:"+ Upload detail images",zh:"+ 上传详情图（可多选）",de:"+ Detailbilder hochladen",es:"+ Subir imágenes de detalle"},
+  pasteUrl:{en:"or paste image URL + Enter",zh:"或粘贴图片链接后回车",de:"oder Bild-URL einfügen + Enter",es:"o pega URL de imagen + Enter"},
+  confirmDelEdition:{en:"Delete this edition?",zh:"确定删除这条参展记录？",de:"Diese Ausgabe löschen?",es:"¿Eliminar esta edición?"},
+  confirmDelPhoto:{en:"Delete this photo?",zh:"删除这张照片?",de:"Dieses Foto löschen?",es:"¿Eliminar esta foto?"},
+  confirmDelImg:{en:"Delete this image?",zh:"删除这张详情图？",de:"Dieses Bild löschen?",es:"¿Eliminar esta imagen?"},
+  confirmDel:{en:"Delete this? Clients will not see it.",zh:"确定删除？客户也将看不到。",de:"Löschen? Kunden sehen es nicht mehr.",es:"¿Eliminar? Los clientes no lo verán."},
+  add:{en:"Add",zh:"新增",de:"Hinzufügen",es:"Añadir"},
+  save:{en:"Save",zh:"保存",de:"Speichern",es:"Guardar"},
+  cancel:{en:"Cancel",zh:"取消",de:"Abbrechen",es:"Cancelar"},
+  saveTip:{en:"Fill all languages if possible; saved to the public link.",zh:"填写各语言版本；保存后同步到公开链接。",de:"Felder ausfüllen; nach Speichern für alle Kunden sichtbar.",es:"Rellena los campos; al guardar se publica."},
+  specHint:{en:"key / value",zh:"参数名 / 参数值，可多语",de:"Schlüssel / Wert",es:"clave / valor"},
+  addSpec:{en:"Add spec",zh:"添加参数",de:"Spezifikation hinzufügen",es:"Añadir especificación"},
+  applyTpl:{en:"Apply template",zh:"套用标准模板",de:"Vorlage anwenden",es:"Aplicar plantilla"},
+  paramName:{en:"name",zh:"参数名",de:"Name",es:"nombre"},
+  paramValue:{en:"value",zh:"参数值",de:"Wert",es:"valor"},
+  adminLogin:{en:"Admin Login",zh:"管理员登录",de:"Admin-Login",es:"Acceso Admin"},
+  adminLoginDesc:{en:"Enter the admin token (GitHub Token). Stored only in your browser.",zh:"输入管理令牌（GitHub Token），仅保存在你的浏览器。",de:"Admin-Token (GitHub-Token) eingeben. Nur lokal gespeichert.",es:"Introduce el token admin (GitHub Token). Solo se guarda localmente."},
+  adminToken:{en:"Admin Token",zh:"管理令牌",de:"Admin-Token",es:"Token de admin"},
+  loginAct:{en:"Login",zh:"登录",de:"Anmelden",es:"Acceder"},
+  loggedIn:{en:"Logged in",zh:"登录成功",de:"Angemeldet",es:"Conectado"},
+  loggedOut:{en:"Logged out",zh:"已退出",de:"Abgemeldet",es:"Desconectado"},
+  wrongPw:{en:"Wrong password",zh:"密码错误",de:"Falsches Passwort",es:"Contraseña incorrecta"},
+  copied:{en:"Copied",zh:"已复制",de:"Kopiert",es:"Copiado"},
 };
-function T(k){const o=I18N[k];return o?(o[LANG]||o.en):k}
+function T(k){const o=I18N[k];if(!o)return k;return o[LANG]||o.en||o.zh||o.de||o.es||k}
+/* 行内 4 语言选择器：pick({en,zh,de,es}) — 用于首页大量内联文案 */
+function pick(o){if(!o||typeof o!=="object")return o||"";return o[LANG]||o.en||o.zh||o.de||o.es||""}
 
 /* ===== LOAD ===== */
 async function loadDB(){
@@ -386,14 +420,19 @@ function allProducts(){return DB.products}
 function allScripts(){return DB.scripts}
 
 /* ===== LANG / NAV ===== */
-function setLang(l){LANG=l;localStorage.setItem(LS_LANG,l);document.documentElement.lang=(l==="zh"?"zh-CN":"en");buildNav();render();}
+function setLang(l){LANG=l;localStorage.setItem(LS_LANG,l);const map={en:"en","zh":"zh-CN",de:"de",es:"es"};document.documentElement.lang=map[l]||"en";buildNav();render();}
 function buildNav(){
   // 内部栏目 intel/scripts 对客户隐藏；业务员(只读)和管理员可见
   const tabs=[["home",T("home")],["identity",T("identity")],["products",T("products")],["cases",T("cases")],["brand",T("brand")]];
   if(canViewInternal()){tabs.splice(4,0,["intel",T("intel")],["scripts",T("scripts")]);}
   const nav=document.getElementById("nav");
   let html=tabs.map(([t,l])=>`<button data-t="${t}" class="${CUR===t?'active':''}">${l}</button>`).join("");
-  html+=`<div class="langtoggle"><button class="${LANG==='en'?'on':''}" onclick="setLang('en')">EN</button><button class="${LANG==='zh'?'on':''}" onclick="setLang('zh')">中</button></div>`;
+  html+=`<div class="langtoggle">`
+    +`<button class="${LANG==='en'?'on':''}" onclick="setLang('en')" title="English">EN</button>`
+    +`<button class="${LANG==='zh'?'on':''}" onclick="setLang('zh')" title="中文">中</button>`
+    +`<button class="${LANG==='de'?'on':''}" onclick="setLang('de')" title="Deutsch">DE</button>`
+    +`<button class="${LANG==='es'?'on':''}" onclick="setLang('es')" title="Español">ES</button>`
+    +`</div>`;
   if(IS_ADMIN_URL && !isAdmin()) html+=`<button data-t="login" style="color:var(--warn)">${T('login')}</button>`;
   if(isAdmin()) html+=`<span class="adminbadge">${T('adminmode')}</span><button data-t="logout" style="color:var(--txt2)">${T('logout')}</button>`;
   if(IS_STAFF_URL && !isStaff() && !isAdmin()) html+=`<button data-t="stafflogin" style="color:var(--warn)">${T('staffLogin')}</button>`;
@@ -431,20 +470,20 @@ function renderHome(){
   // Hero 轮播：3 张图 + 各自标语（西门子风简洁定位 + 真实背书）
   const HERO_SLIDES=[
     {img:"https://sc02.alicdn.com/kf/Abebddf8579b946d2a9189e0d99f7d002j.png",
-     kicker:ZH?"高新技术企业 · 广交会 6+ 届 · 12 年金牌":"HIGH-TECH ENTERPRISE · CANTON FAIR · 12 YRS GOLD",
-     title:ZH?"塑造户外生活的未来":"Engineering the future of outdoor living.",
-     sub:ZH?"双面可逆再生 PP 编织地垫的高新技术 ODM 制造商。90% 出口，服务 Aldi · Lidl · The Home Depot · K-mart 等全球零售巨头。":"A high-tech ODM factory of reversible recycled-PP woven rugs. 90% exported. Trusted by Aldi · Lidl · The Home Depot · K-mart.",
-     ctaPrimary:ZH?"探索 AIYISI":"Explore AIYISI",ctaGhost:ZH?"查看合作案例":"View Cases"},
+     kicker:pick({en:"HIGH-TECH ENTERPRISE · CANTON FAIR · 12 YRS GOLD",zh:"高新技术企业 · 广交会 6+ 届 · 12 年金牌",de:"HIGH-TECH-UNTERNEHMEN · CANTON FAIR · 12 JAHRE GOLD",es:"EMPRESA DE ALTA TECNOLOGÍA · CANTON FAIR · 12 AÑOS ORO"}),
+     title:pick({en:"Engineering the future of outdoor living.",zh:"塑造户外生活的未来",de:"Wir gestalten die Zukunft des Outdoor-Lebens.",es:"Diseñando el futuro de la vida al aire libre."}),
+     sub:pick({en:"A high-tech ODM factory of reversible recycled-PP woven rugs. 90% exported. Trusted by Aldi · Lidl · The Home Depot · K-mart.",zh:"双面可逆再生 PP 编织地垫的高新技术 ODM 制造商。90% 出口，服务 Aldi · Lidl · The Home Depot · K-mart 等全球零售巨头。",de:"High-Tech-ODM-Hersteller für wendbare, recycelte PP-Webteppiche. 90 % Export. Vertraut von Aldi · Lidl · The Home Depot · K-mart.",es:"Fábrica ODM de alta tecnología de alfombras tejidas reversibles de PP reciclado. 90 % exportación. La confían Aldi · Lidl · The Home Depot · K-mart."}),
+     ctaPrimary:pick({en:"Explore AIYISI",zh:"探索 AIYISI",de:"AIYISI entdecken",es:"Explorar AIYISI"}),ctaGhost:pick({en:"View Cases",zh:"查看合作案例",de:"Referenzen ansehen",es:"Ver casos"})},
     {img:"https://sc02.alicdn.com/kf/A25d828adf4984d568a23cdf80e8c2a56c.png",
-     kicker:ZH?"双面可逆 · 防水抗UV · 100% 再生 PP":"REVERSIBLE · WATERPROOF · 100% RECYCLED PP",
-     title:ZH?"让可持续户外生活成为现实":"Powering sustainable outdoor living.",
-     sub:ZH?"100% 再生聚丙烯材质，双面双图案设计，可水洗、防霉、抗 UV。北美 RV 露营市场首选 ODM 供应商，复购率 38-50%。":"100% recycled-PP material with reversible double-pattern design. Washable, mildew-resistant, UV-stable. North America's preferred RV market ODM, with 38-50% reorder rate.",
-     ctaPrimary:ZH?"浏览产品目录":"Browse Catalog",ctaGhost:ZH?"了解我们的优势":"Why AIYISI"},
+     kicker:pick({en:"REVERSIBLE · WATERPROOF · 100% RECYCLED PP",zh:"双面可逆 · 防水抗UV · 100% 再生 PP",de:"WENDBAR · WASSERDICHT · 100 % RECYCELTES PP",es:"REVERSIBLE · IMPERMEABLE · 100% PP RECICLADO"}),
+     title:pick({en:"Powering sustainable outdoor living.",zh:"让可持续户外生活成为现实",de:"Wir treiben nachhaltiges Outdoor-Leben voran.",es:"Impulsando una vida al aire libre sostenible."}),
+     sub:pick({en:"100% recycled-PP material with reversible double-pattern design. Washable, mildew-resistant, UV-stable. North America's preferred RV market ODM, with 38-50% reorder rate.",zh:"100% 再生聚丙烯材质，双面双图案设计，可水洗、防霉、抗 UV。北美 RV 露营市场首选 ODM 供应商，复购率 38-50%。",de:"100 % recyceltes PP, wendbares Doppelmuster-Design. Waschbar, schimmelresistent, UV-stabil. Bevorzugter ODM-Lieferant für den nordamerikanischen RV-Markt, Wiederbestellrate 38–50 %.",es:"100% PP reciclado con diseño reversible de doble patrón. Lavable, resistente al moho y a los rayos UV. ODM preferido en el mercado RV de Norteamérica, tasa de recompra del 38-50%."}),
+     ctaPrimary:pick({en:"Browse Catalog",zh:"浏览产品目录",de:"Katalog ansehen",es:"Ver catálogo"}),ctaGhost:pick({en:"Why AIYISI",zh:"了解我们的优势",de:"Warum AIYISI",es:"Por qué AIYISI"})},
     {img:"https://sc02.alicdn.com/kf/A1cb1c311a0684e48961b50f6952b210dw.png",
-     kicker:ZH?"25,000m² 厂区 · 200+ 套设备 · 9+ 项专利":"25,000 m² PLANT · 200+ MACHINES · 9+ PATENTS",
-     title:ZH?"自有工厂 · 全工艺覆盖 · 全球供应":"In-house manufacturing for global supply.",
-     sub:ZH?"机织 + 提花 + 绞编全工艺自有产能。100% 准时发货，≤3h 询盘响应，纳税信用 A 级企业。":"In-house woven, jacquard & braided production capacity. 100% on-time delivery, ≤3h response, A-grade tax-credit certified.",
-     ctaPrimary:ZH?"了解工厂实力":"Discover Capability",ctaGhost:ZH?"查看资质认证":"Certifications"},
+     kicker:pick({en:"25,000 m² PLANT · 200+ MACHINES · 9+ PATENTS",zh:"25,000m² 厂区 · 200+ 套设备 · 9+ 项专利",de:"25.000 m² WERK · 200+ MASCHINEN · 9+ PATENTE",es:"25.000 m² PLANTA · 200+ MÁQUINAS · 9+ PATENTES"}),
+     title:pick({en:"In-house manufacturing for global supply.",zh:"自有工厂 · 全工艺覆盖 · 全球供应",de:"Eigenfertigung für globale Versorgung.",es:"Fabricación propia para suministro global."}),
+     sub:pick({en:"In-house woven, jacquard & braided production capacity. 100% on-time delivery, ≤3h response, A-grade tax-credit certified.",zh:"机织 + 提花 + 绞编全工艺自有产能。100% 准时发货，≤3h 询盘响应，纳税信用 A 级企业。",de:"Hauseigene Web-, Jacquard- und Flechtkapazitäten. 100 % pünktliche Lieferung, Reaktion ≤3 h, Steuerbonität A.",es:"Capacidad propia de tejido, jacquard y trenzado. 100% entrega a tiempo, respuesta ≤3 h, crédito fiscal A."}),
+     ctaPrimary:pick({en:"Discover Capability",zh:"了解工厂实力",de:"Werkskapazitäten entdecken",es:"Descubrir capacidades"}),ctaGhost:pick({en:"Certifications",zh:"查看资质认证",de:"Zertifikate",es:"Certificaciones"})},
   ];
   // 渲染后由 show() 启动轮播
   window.__pendingHero=HERO_SLIDES;
@@ -463,12 +502,12 @@ function renderHome(){
       <span>${l.name}</span>
     </div>`;
   }
-  // 全球区域代理招商
+  // 全球区域代理招商（4 语言）
   const REGIONS=[
-    {flag:"🇺🇸",en:"North America",zh:"北美地区",sub_en:"RV / Camping / Patio",sub_zh:"房车 / 露营 / 庭院市场"},
-    {flag:"🇪🇺",en:"Europe",zh:"欧洲地区",sub_en:"Garden / Home Living",sub_zh:"花园 / 家居生活市场"},
-    {flag:"🇦🇺",en:"Oceania",zh:"大洋洲地区",sub_en:"Outdoor Lifestyle",sub_zh:"户外生活方式市场"},
-    {flag:"🌍",en:"Middle East & Others",zh:"中东及其他地区",sub_en:"Premium Home Use",sub_zh:"高端家用 / 祈祷垫市场"},
+    {flag:"🇺🇸",name:{en:"North America",zh:"北美地区",de:"Nordamerika",es:"América del Norte"},sub:{en:"RV / Camping / Patio",zh:"房车 / 露营 / 庭院市场",de:"Wohnmobil / Camping / Terrasse",es:"Caravanas / Camping / Patio"}},
+    {flag:"🇪🇺",name:{en:"Europe",zh:"欧洲地区",de:"Europa",es:"Europa"},sub:{en:"Garden / Home Living",zh:"花园 / 家居生活市场",de:"Garten / Wohnen",es:"Jardín / Hogar"}},
+    {flag:"🇦🇺",name:{en:"Oceania",zh:"大洋洲地区",de:"Ozeanien",es:"Oceanía"},sub:{en:"Outdoor Lifestyle",zh:"户外生活方式市场",de:"Outdoor-Lifestyle",es:"Estilo de vida al aire libre"}},
+    {flag:"🌍",name:{en:"Middle East & Others",zh:"中东及其他地区",de:"Naher Osten & Andere",es:"Oriente Medio y otros"},sub:{en:"Premium Home Use",zh:"高端家用 / 祈祷垫市场",de:"Premium-Heimnutzung",es:"Uso doméstico premium"}},
   ];
   return `
   <!-- HERO 轮播 -->
@@ -490,74 +529,74 @@ function renderHome(){
 
   <!-- 数据成就横条 (6 项) -->
   <div class="ystats">
-    <div class="s"><b>${yrs||12} YRS</b><span>${ZH?'金牌供应商':'Gold Supplier'}</span></div>
-    <div class="s"><b>25,000m²</b><span>${ZH?'厂区面积':'Plant Area'}</span></div>
-    <div class="s"><b>90%</b><span>${ZH?'出口比例':'Export Ratio'}</span></div>
-    <div class="s"><b>38-50%</b><span>${ZH?'客户复购率':'Reorder Rate'}</span></div>
-    <div class="s"><b>9+</b><span>${ZH?'国家专利':'Patents'}</span></div>
-    <div class="s"><b>100%</b><span>${ZH?'准时发货':'On-Time'}</span></div>
+    <div class="s"><b>${yrs||12} YRS</b><span>${pick({en:"Gold Supplier",zh:"金牌供应商",de:"Gold-Lieferant",es:"Proveedor Gold"})}</span></div>
+    <div class="s"><b>25,000m²</b><span>${pick({en:"Plant Area",zh:"厂区面积",de:"Werksfläche",es:"Superficie"})}</span></div>
+    <div class="s"><b>90%</b><span>${pick({en:"Export Ratio",zh:"出口比例",de:"Exportanteil",es:"Exportación"})}</span></div>
+    <div class="s"><b>38-50%</b><span>${pick({en:"Reorder Rate",zh:"客户复购率",de:"Wiederbestellrate",es:"Recompra"})}</span></div>
+    <div class="s"><b>9+</b><span>${pick({en:"Patents",zh:"国家专利",de:"Patente",es:"Patentes"})}</span></div>
+    <div class="s"><b>100%</b><span>${pick({en:"On-Time",zh:"准时发货",de:"Pünktlich",es:"A tiempo"})}</span></div>
   </div>
 
   <!-- WHY 实力卡片 (6 张) -->
   <div style="text-align:center;margin-bottom:24px">
-    <h2 style="font-size:28px;letter-spacing:-.5px">${ZH?'为什么选择 AIYISI':'Why AIYISI'}</h2>
-    <p style="color:var(--txt2);font-size:14px;margin-top:6px">${ZH?'欧美商超供应链信赖的高新技术 ODM 工厂':'A high-tech ODM factory trusted by global retail supply chains'}</p>
+    <h2 style="font-size:28px;letter-spacing:-.5px">${pick({en:"Why AIYISI",zh:"为什么选择 AIYISI",de:"Warum AIYISI",es:"Por qué AIYISI"})}</h2>
+    <p style="color:var(--txt2);font-size:14px;margin-top:6px">${pick({en:"A high-tech ODM factory trusted by global retail supply chains",zh:"欧美商超供应链信赖的高新技术 ODM 工厂",de:"High-Tech-ODM-Fabrik, dem globale Handelsketten vertrauen",es:"Fábrica ODM de alta tecnología en la que confían los minoristas globales"})}</p>
   </div>
   <div class="ywhy">
-    <div class="w" style="cursor:pointer" onclick="show('identity')"><div class="ic">⌘</div><h4>${ZH?'高新技术企业':'High-Tech Enterprise'}</h4><p>${ZH?'国家/省级高新技术企业认定，纳税信用 A 级，9+ 项产品设计与实用新型专利。':'Government-certified High-Tech Enterprise with A-grade tax credit and 9+ design/utility patents.'}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${ZH?'查看认证详情 →':'View certifications →'}</div></div>
-    <div class="w" style="cursor:pointer" onclick="show('identity')"><div class="ic">✓</div><h4>${ZH?'TÜV Rheinland 认证':'TÜV Rheinland Certified'}</h4><p>${ZH?'德国 TÜV 认证供应商，产品符合欧美主流标准，所有认证均可在颁发机构官网查询。':'TÜV-audited supplier with products meeting EU/US standards. All certifications verifiable on the official source.'}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${ZH?'查看认证详情 →':'View certifications →'}</div></div>
-    <div class="w" style="cursor:pointer" onclick="show('products')"><div class="ic">⚙</div><h4>${ZH?'全工艺自有产能':'Full-Process In-House'}</h4><p>${ZH?'机织 + 提花 + 绞编 + 双面可逆设计，200+ 套先进设备全工艺覆盖。':'Woven + jacquard + braided + reversible design. 200+ machines for full-process coverage.'}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${ZH?'浏览产品目录 →':'Browse catalog →'}</div></div>
-    <div class="w" style="cursor:pointer" onclick="show('products')"><div class="ic">↻</div><h4>${ZH?'OEM/ODM 全定制':'Full OEM/ODM'}</h4><p>${ZH?'2 名研发工程师，支持图纸/打样定制，私标包装与花型独家开发。':'2 R&D engineers. Drawing & sample-based customization, private-label packaging, exclusive patterns.'}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${ZH?'浏览产品目录 →':'Browse catalog →'}</div></div>
-    <div class="w" style="cursor:pointer" onclick="openFair('canton-fair')"><div class="ic">🌐</div><h4>${ZH?'全球展会布局':'Global Trade Show Presence'}</h4><p>${ZH?'广交会 6+ 届常驻，德国 Spoga+Gafa、Heimtextil 持续参展。':'6+ consecutive Canton Fair editions, regular exhibitor at Spoga+Gafa & Heimtextil (Germany).'}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${ZH?'查看参展记录 →':'View fair records →'}</div></div>
+    <div class="w" style="cursor:pointer" onclick="show('identity')"><div class="ic">⌘</div><h4>${pick({en:"High-Tech Enterprise",zh:"高新技术企业",de:"High-Tech-Unternehmen",es:"Empresa de Alta Tecnología"})}</h4><p>${pick({en:"Government-certified High-Tech Enterprise with A-grade tax credit and 9+ design/utility patents.",zh:"国家/省级高新技术企业认定，纳税信用 A 级，9+ 项产品设计与实用新型专利。",de:"Staatlich zertifiziertes High-Tech-Unternehmen mit Steuerbonität A und 9+ Design-/Gebrauchsmusterpatenten.",es:"Empresa de Alta Tecnología certificada por el gobierno, crédito fiscal A y 9+ patentes."})}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${pick({en:"View certifications →",zh:"查看认证详情 →",de:"Zertifikate ansehen →",es:"Ver certificaciones →"})}</div></div>
+    <div class="w" style="cursor:pointer" onclick="show('identity')"><div class="ic">✓</div><h4>${pick({en:"TÜV Rheinland Certified",zh:"TÜV Rheinland 认证",de:"TÜV Rheinland zertifiziert",es:"Certificado TÜV Rheinland"})}</h4><p>${pick({en:"TÜV-audited supplier with products meeting EU/US standards. All certifications verifiable on the official source.",zh:"德国 TÜV 认证供应商，产品符合欧美主流标准，所有认证均可在颁发机构官网查询。",de:"TÜV-auditierter Lieferant, Produkte erfüllen EU/US-Standards. Alle Zertifikate offiziell verifizierbar.",es:"Proveedor auditado por TÜV, productos conforme a estándares UE/EE.UU. Todas las certificaciones son verificables."})}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${pick({en:"View certifications →",zh:"查看认证详情 →",de:"Zertifikate ansehen →",es:"Ver certificaciones →"})}</div></div>
+    <div class="w" style="cursor:pointer" onclick="show('products')"><div class="ic">⚙</div><h4>${pick({en:"Full-Process In-House",zh:"全工艺自有产能",de:"Vollständige Eigenfertigung",es:"Producción Integral Propia"})}</h4><p>${pick({en:"Woven + jacquard + braided + reversible design. 200+ machines for full-process coverage.",zh:"机织 + 提花 + 绞编 + 双面可逆设计，200+ 套先进设备全工艺覆盖。",de:"Gewebt + Jacquard + geflochten + wendbar. 200+ Maschinen, vollständige Prozessabdeckung.",es:"Tejido + jacquard + trenzado + reversible. Más de 200 máquinas, cobertura integral."})}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${pick({en:"Browse catalog →",zh:"浏览产品目录 →",de:"Katalog ansehen →",es:"Ver catálogo →"})}</div></div>
+    <div class="w" style="cursor:pointer" onclick="show('products')"><div class="ic">↻</div><h4>${pick({en:"Full OEM/ODM",zh:"OEM/ODM 全定制",de:"Komplette OEM/ODM",es:"OEM/ODM Total"})}</h4><p>${pick({en:"2 R&D engineers. Drawing & sample-based customization, private-label packaging, exclusive patterns.",zh:"2 名研发工程师，支持图纸/打样定制，私标包装与花型独家开发。",de:"2 F&E-Ingenieure. Zeichnungs- und Mustergestützte Anpassung, Private-Label-Verpackung, exklusive Muster.",es:"2 ingenieros I+D. Personalización por planos/muestras, etiqueta privada, diseños exclusivos."})}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${pick({en:"Browse catalog →",zh:"浏览产品目录 →",de:"Katalog ansehen →",es:"Ver catálogo →"})}</div></div>
+    <div class="w" style="cursor:pointer" onclick="openFair('canton-fair')"><div class="ic">🌐</div><h4>${pick({en:"Global Trade Show Presence",zh:"全球展会布局",de:"Globale Messepräsenz",es:"Presencia Global en Ferias"})}</h4><p>${pick({en:"6+ consecutive Canton Fair editions, regular exhibitor at Spoga+Gafa & Heimtextil (Germany).",zh:"广交会 6+ 届常驻，德国 Spoga+Gafa、Heimtextil 持续参展。",de:"6+ Auftritte bei der Canton Fair, regelmäßiger Aussteller bei Spoga+Gafa & Heimtextil (Deutschland).",es:"Más de 6 ediciones consecutivas en Canton Fair, expositor habitual en Spoga+Gafa y Heimtextil (Alemania)."})}</p><div style="margin-top:10px;font-size:11px;color:var(--accent);font-weight:700">${pick({en:"View fair records →",zh:"查看参展记录 →",de:"Messeauftritte ansehen →",es:"Ver ferias →"})}</div></div>
     <div class="w" style="grid-column:1 / -1;background:linear-gradient(135deg,#0F2C4D,#1a3a5e);border-color:#1F6FBF;cursor:pointer" onclick="show('cases')">
       <div class="ic" style="background:linear-gradient(135deg,#D62828,#ED1A3B);color:#fff">🛒</div>
-      <h4 style="color:#fff;font-size:17px">${ZH?'Amazon 卖家优质供应商':'Premium Supplier for Amazon Sellers'}</h4>
-      <p style="color:rgba(255,255,255,.85);line-height:1.6;font-size:13px">${ZH?'专为亚马逊卖家定制：低 MOQ 200pcs 起订、私标包装贴牌、TÜV/CE 合规文件、研发原创花型设计、FBA 友好打包。<strong style="color:#7DB8F0">12 年欧美零售品质把控 · 5.0★ 店铺评分 · 38-50% 客户复购验证</strong>——助你打造畅销爆款，远离差评困扰。':'Tailored for Amazon sellers: low MOQ from 200pcs, private-label packaging, TÜV/CE compliance docs, original pattern design, FBA-friendly packing. <strong style="color:#7DB8F0">12 years of EU/US quality control · 5.0★ store rating · 38-50% repeat-order rate</strong> — helping you build best-sellers, free from bad reviews.'}</p>
+      <h4 style="color:#fff;font-size:17px">${pick({en:"Premium Supplier for Amazon Sellers",zh:"Amazon 卖家优质供应商",de:"Premium-Lieferant für Amazon-Verkäufer",es:"Proveedor Premium para vendedores de Amazon"})}</h4>
+      <p style="color:rgba(255,255,255,.85);line-height:1.6;font-size:13px">${pick({en:"Tailored for Amazon sellers: low MOQ from 200pcs, private-label packaging, TÜV/CE compliance docs, original pattern design, FBA-friendly packing. <strong style=\"color:#7DB8F0\">12 years of EU/US quality control · 5.0★ store rating · 38-50% repeat-order rate</strong> — helping you build best-sellers, free from bad reviews.",zh:"专为亚马逊卖家定制：低 MOQ 200pcs 起订、私标包装贴牌、TÜV/CE 合规文件、研发原创花型设计、FBA 友好打包。<strong style=\"color:#7DB8F0\">12 年欧美零售品质把控 · 5.0★ 店铺评分 · 38-50% 客户复购验证</strong>——助你打造畅销爆款，远离差评困扰。",de:"Tailored for Amazon sellers: low MOQ from 200pcs, private-label packaging, TÜV/CE compliance docs, original pattern design, FBA-friendly packing. <strong style=\"color:#7DB8F0\">12 years of EU/US quality control · 5.0★ store rating · 38-50% repeat-order rate</strong> — helping you build best-sellers, free from bad reviews.",es:"Tailored for Amazon sellers: low MOQ from 200pcs, private-label packaging, TÜV/CE compliance docs, original pattern design, FBA-friendly packing. <strong style=\"color:#7DB8F0\">12 years of EU/US quality control · 5.0★ store rating · 38-50% repeat-order rate</strong> — helping you build best-sellers, free from bad reviews."})}</p>
     </div>
   </div>
 
   <!-- 国际展会 -->
   <div class="yfairs">
-    <h3>${ZH?'全球展会持续参展':'Global Trade Show Presence'}</h3>
-    <div class="sub">${ZH?'连续多届亮相国际顶级户外/家纺展会，与全球采购商面对面':'Continuous presence at top international outdoor & home-textile fairs'}</div>
+    <h3>${pick({en:"Global Trade Show Presence",zh:"全球展会持续参展",de:"Globale Messepräsenz",es:"Presencia Global en Ferias"})}</h3>
+    <div class="sub">${pick({en:"Continuous presence at top international outdoor & home-textile fairs",zh:"连续多届亮相国际顶级户外/家纺展会，与全球采购商面对面",de:"Dauerpräsenz auf führenden internationalen Outdoor- und Heimtextil-Messen",es:"Presencia constante en las principales ferias internacionales de outdoor y textil"})}</div>
     <div class="grid">
       ${(DB.fairs||[]).map(f=>`<div class="f" onclick="openFair('${esc(f.id)}')" style="cursor:pointer">
         <div class="ico">${f.flag||''}</div>
         <h4>${esc(L(f.name))}</h4>
         <p>${esc(L(f.subtitle||f.location||{en:'',zh:''}))}</p>
-        <div style="margin-top:8px;font-size:11px;color:var(--accent)">${(f.editions||[]).length} ${ZH?'届参展':'editions'} · ${ZH?'查看详情 →':'View details →'}</div>
+        <div style="margin-top:8px;font-size:11px;color:var(--accent)">${(f.editions||[]).length} ${pick({en:"editions",zh:"届参展",de:"Ausgaben",es:"ediciones"})} · ${pick({en:"View details →",zh:"查看详情 →",de:"Details ansehen →",es:"Ver detalles →"})}</div>
       </div>`).join("")}
     </div>
   </div>
 
   <!-- 三大产品线分类入口 -->
   <div style="text-align:center;margin:50px 0 24px">
-    <h2 style="font-size:28px;letter-spacing:-.5px">${ZH?'核心产品线':'Core Product Lines'}</h2>
-    <p style="color:var(--txt2);font-size:14px;margin-top:6px">${ZH?'三大主营品类，已服务 100+ 海外采购商':'Three core categories, serving 100+ overseas buyers'}</p>
+    <h2 style="font-size:28px;letter-spacing:-.5px">${pick({en:"Core Product Lines",zh:"核心产品线",de:"Kernproduktlinien",es:"Líneas de productos clave"})}</h2>
+    <p style="color:var(--txt2);font-size:14px;margin-top:6px">${pick({en:"Three core categories, serving 100+ overseas buyers",zh:"三大主营品类，已服务 100+ 海外采购商",de:"Drei Kernkategorien, mehr als 100 Auslandskunden",es:"Tres categorías principales, sirviendo a más de 100 compradores internacionales"})}</p>
   </div>
   <div class="ycats">
-    ${sampleProds[0]?`<div class="c" onclick="show('products');setTimeout(()=>{const i=document.getElementById('psearch');if(i){i.value='RV';filterProducts('RV');}},300)"><img src="${esc(sampleProds[0].images[0])}"><div class="lbl"><div><span>${ZH?'露营/房车':'Camping/RV'}</span><h4>RV & Camping Mats</h4></div></div></div>`:''}
-    ${sampleProds[1]?`<div class="c" onclick="show('products');setTimeout(()=>{const i=document.getElementById('psearch');if(i){i.value='patio';filterProducts('patio');}},300)"><img src="${esc(sampleProds[1].images[0])}"><div class="lbl"><div><span>${ZH?'庭院/露台':'Garden/Patio'}</span><h4>Patio & Outdoor Rugs</h4></div></div></div>`:''}
-    ${sampleProds[2]?`<div class="c" onclick="show('products');setTimeout(()=>{const i=document.getElementById('psearch');if(i){i.value='beach';filterProducts('beach');}},300)"><img src="${esc(sampleProds[2].images[0])}"><div class="lbl"><div><span>${ZH?'沙滩/野餐':'Beach/Picnic'}</span><h4>Beach & Picnic Mats</h4></div></div></div>`:''}
+    ${sampleProds[0]?`<div class="c" onclick="show('products');setTimeout(()=>{const i=document.getElementById('psearch');if(i){i.value='RV';filterProducts('RV');}},300)"><img src="${esc(sampleProds[0].images[0])}"><div class="lbl"><div><span>${pick({en:"Camping/RV",zh:"露营/房车",de:"Camping/Wohnmobil",es:"Camping/AC"})}</span><h4>RV & Camping Mats</h4></div></div></div>`:''}
+    ${sampleProds[1]?`<div class="c" onclick="show('products');setTimeout(()=>{const i=document.getElementById('psearch');if(i){i.value='patio';filterProducts('patio');}},300)"><img src="${esc(sampleProds[1].images[0])}"><div class="lbl"><div><span>${pick({en:"Garden/Patio",zh:"庭院/露台",de:"Garten/Terrasse",es:"Jardín/Patio"})}</span><h4>Patio & Outdoor Rugs</h4></div></div></div>`:''}
+    ${sampleProds[2]?`<div class="c" onclick="show('products');setTimeout(()=>{const i=document.getElementById('psearch');if(i){i.value='beach';filterProducts('beach');}},300)"><img src="${esc(sampleProds[2].images[0])}"><div class="lbl"><div><span>${pick({en:"Beach/Picnic",zh:"沙滩/野餐",de:"Strand/Picknick",es:"Playa/Picnic"})}</span><h4>Beach & Picnic Mats</h4></div></div></div>`:''}
   </div>
 
   <!-- 客户 Logo 矩阵 -->
   <div class="ylogos">
-    <h3>${ZH?'我们服务过的客户':'Our Trusted Customers'}</h3>
+    <h3>${pick({en:"Our Trusted Customers",zh:"我们服务过的客户",de:"Unsere Kunden",es:"Nuestros clientes"})}</h3>
     <div class="row">${LOGOS_TRUSTED.map(logoBlock).join("")}</div>
   </div>
   <div class="ylogos" style="background:linear-gradient(135deg,#16241c,#1a2129)">
-    <h3 style="color:#fff">${ZH?'诚招全球区域代理 / 分销合作伙伴':'Seeking Global Regional Distributors'}</h3>
-    <p style="text-align:center;color:var(--txt2);font-size:13px;margin-bottom:24px">${ZH?'加入 AIYISI 全球分销网络，共享 12 年欧美零售供应链经验':'Join the AIYISI global distribution network · 12 years of EU/US retail supply experience'}</p>
+    <h3 style="color:#fff">${pick({en:"Seeking Global Regional Distributors",zh:"诚招全球区域代理 / 分销合作伙伴",de:"Wir suchen regionale Vertriebspartner weltweit",es:"Buscamos Distribuidores Regionales Globales"})}</h3>
+    <p style="text-align:center;color:var(--txt2);font-size:13px;margin-bottom:24px">${pick({en:"Join the AIYISI global distribution network · 12 years of EU/US retail supply experience",zh:"加入 AIYISI 全球分销网络，共享 12 年欧美零售供应链经验",de:"Treten Sie dem globalen AIYISI-Vertriebsnetz bei · 12 Jahre Erfahrung im Einzelhandel EU/USA",es:"Únete a la red global de AIYISI · 12 años de experiencia en cadenas minoristas UE/EE.UU."})}</p>
     <div class="row" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px">
       ${REGIONS.map(r=>`<div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:20px 16px;text-align:center;transition:.2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='rgba(255,255,255,.15)'">
         <div style="font-size:32px;margin-bottom:8px">${r.flag}</div>
-        <h4 style="color:#fff;font-size:14px;margin-bottom:4px">${ZH?r.zh:r.en}</h4>
-        <p style="color:var(--txt2);font-size:11px">${ZH?r.sub_zh:r.sub_en}</p>
+        <h4 style="color:#fff;font-size:14px;margin-bottom:4px">${pick(r.name)}</h4>
+        <p style="color:var(--txt2);font-size:11px">${pick(r.sub)}</p>
       </div>`).join("")}
     </div>
     <div style="text-align:center;margin-top:24px;color:#cdd5dd;font-size:13px">
-      ${ZH?'有意合作请联系':'For partnership inquiries, contact'}
+      ${pick({en:"For partnership inquiries, contact",zh:"有意合作请联系",de:"Für Partneranfragen kontaktieren Sie",es:"Para asociarse, contacta"})}
       <a href="mailto:sales@tzaiyisi.com" style="color:#7DB8F0;font-weight:600;margin-left:4px">✉ sales@tzaiyisi.com</a>
     </div>
   </div>
@@ -572,26 +611,26 @@ function adminBtns(type,id){
 }
 function renderIdentity(){
   return `<div class="sec-title"><span class="bar"></span>${T('identity')}</div>
-  <div class="sec-sub">${LANG==='zh'?'所有认证均可在颁发机构官方网站验证真伪 —— 点击「官方查询」即可跳转。':'All certifications can be verified at the issuing authority — click "Verify" to visit the official source.'}${isAdmin()?T('adminTip'):''}</div>
+  <div class="sec-sub">${T('certSub')}${isAdmin()?T('adminTip'):''}</div>
   ${isAdmin()?`<button class="btn" style="margin-bottom:16px" onclick="openEdit('certs','')">${T('addCert')}</button>`:''}
   ${DB.certs.map(c=>`<div class="qrow">${adminBtns('certs',c.id)}<div class="q">${esc(L(c.t))}</div><div class="a">${esc(L(c.d))}</div>${c.verify&&c.verify.url?`<div style="margin-top:12px"><a href="${esc(c.verify.url)}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:7px 14px;border-radius:7px;font-size:12px;font-weight:700;text-decoration:none">🔍 ${esc(L(c.verify.label))} →</a></div>`:''}</div>`).join("")}`;
 }
 function renderIntel(){
-  return `<div class="sec-title"><span class="bar"></span>${T('intel')} <span style="font-size:12px;color:var(--warn)">(${LANG==='zh'?'内部资料':'Internal only'})</span></div>
-  <div class="sec-sub">${LANG==='zh'?'客户结构、市场画像、采购决策关键词。':'Customer structure, market profile, purchase keywords.'}${isAdmin()?T('adminTip'):''}</div>
+  return `<div class="sec-title"><span class="bar"></span>${T('intel')} <span style="font-size:12px;color:var(--warn)">(${T('internalOnly')})</span></div>
+  <div class="sec-sub">${T('intelSub')}${isAdmin()?T('adminTip'):''}</div>
   ${isAdmin()?`<button class="btn" style="margin-bottom:16px" onclick="openEdit('intel','')">${T('addIntel')}</button>`:''}
   ${DB.intel.map(i=>`<div class="qrow">${adminBtns('intel',i.id)}<div class="q">${esc(L(i.t))}</div><div class="a">${esc(L(i.d))}</div></div>`).join("")}`;
 }
 function renderBrand(){
   return `<div class="sec-title"><span class="bar"></span>${T('brand')}</div>
-  <div class="sec-sub">${LANG==='zh'?'品牌定位、核心品类、市场与背书。':'Positioning, categories, markets & endorsements.'}${isAdmin()?T('adminTip'):''}</div>
+  <div class="sec-sub">${T('brandSub')}${isAdmin()?T('adminTip'):''}</div>
   ${isAdmin()?`<button class="btn" style="margin-bottom:16px" onclick="openEdit('brand','')">${T('addBrand')}</button>`:''}
   ${DB.brand.map(b=>`<div class="qrow">${adminBtns('brand',b.id)}<div class="q">${esc(L(b.t))}</div><div class="a">${esc(L(b.d))}</div></div>`).join("")}`;
 }
 function renderCases(){
   const cs=DB.cases||[];
   return `<div class="sec-title"><span class="bar"></span>${T('cases')}</div>
-  <div class="sec-sub">${LANG==='zh'?'与全球零售品牌的长期合作。':'Long-term partnerships with global retail brands.'}${isAdmin()?T('adminTip'):''}</div>
+  <div class="sec-sub">${T('casesSub')}${isAdmin()?T('adminTip'):''}</div>
   ${isAdmin()?`<button class="btn" style="margin-bottom:16px" onclick="openEdit('cases','')">${T('addCase')}</button>`:''}
   <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr))">
   ${cs.map(c=>`<div class="card" style="cursor:default">
@@ -611,14 +650,14 @@ function scriptRow(s){
     ${adminBtns('scripts',s.id)}
     <div class="q">${esc(s.id)} · ${esc(L(s.t))}</div>
     <div class="a">${esc(L(s.c))}</div>
-    <div class="meta">${LANG==='zh'?'场景':'Scene'}: ${esc(L(s.cat))}</div>
+    <div class="meta">${T('scene')}: ${esc(L(s.cat))}</div>
   </div>`;
 }
 function scriptListHTML(f=""){f=f.toLowerCase();const list=allScripts().filter(s=>(bothLang(s.t)+" "+bothLang(s.c)+" "+bothLang(s.cat)+" "+s.id).toLowerCase().includes(f));return{count:list.length,html:list.map(scriptRow).join("")};}
 function renderScripts(filter=""){
   const r=scriptListHTML(filter);
-  return `<div class="sec-title"><span class="bar"></span>${T('scripts')} <span style="font-size:12px;color:var(--warn)">(${LANG==='zh'?'内部资料':'Internal only'})</span></div>
-  <div class="sec-sub">${LANG==='zh'?'B2B 销售全流程话术，点复制即用。':'B2B sales scripts, click to copy.'}${isAdmin()?T('adminTip'):''}</div>
+  return `<div class="sec-title"><span class="bar"></span>${T('scripts')} <span style="font-size:12px;color:var(--warn)">(${T('internalOnly')})</span></div>
+  <div class="sec-sub">${T('scriptsSub')}${isAdmin()?T('adminTip'):''}</div>
   <div class="toolbar"><div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
     <input id="ssearch" placeholder="${T('searchScript')}" value="${esc(filter)}" oninput="filterScripts(this.value)"></div>
     <div class="count" id="scount">${r.count} ${T('rows')}</div></div>
@@ -651,7 +690,7 @@ function productListHTML(f=""){f=f.toLowerCase();const list=allProducts().filter
 function renderProducts(filter=""){
   const r=productListHTML(filter);
   return `<div class="sec-title"><span class="bar"></span>${T('products')}</div>
-  <div class="sec-sub">${LANG==='zh'?'点击任意产品查看多图、规格参数与视频。':'Click any product for photos, specs & video.'}${isAdmin()?T('adminTip'):''}</div>
+  <div class="sec-sub">${T('productsSub')}${isAdmin()?T('adminTip'):''}</div>
   <div class="toolbar"><div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
     <input id="psearch" placeholder="${T('searchProduct')}" value="${esc(filter)}" oninput="filterProducts(this.value)"></div>
     <div class="count" id="pcount">${r.count} ${T('items')}</div></div>
@@ -685,7 +724,7 @@ function renderDetail(){
         ${imgs.map((im,i)=>`<div class="t ${i===DETAIL_IMG?'on':''}" onclick="setDetailImg(${i})"><img src="${esc(im)}">${isAdmin()?`<span class="x" onclick="event.stopPropagation();delProductImg(${i})">×</span>`:''}</div>`).join("")}
         ${isAdmin()?`<div class="t" style="display:flex;align-items:center;justify-content:center;font-size:26px;color:var(--accent2)" onclick="document.getElementById('imgFile').click()">+</div>`:''}
       </div>
-      ${isAdmin()?`<input type="file" id="imgFile" accept="image/*" style="display:none" onchange="uploadImg(this)"><div style="margin-top:8px"><input id="imgUrlInput" placeholder="${LANG==='zh'?'或粘贴图片链接后回车':'or paste image URL + Enter'}" style="width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--txt);padding:8px" onkeydown="if(event.key==='Enter')addImgUrl(this.value)"></div>`:''}
+      ${isAdmin()?`<input type="file" id="imgFile" accept="image/*" style="display:none" onchange="uploadImg(this)"><div style="margin-top:8px"><input id="imgUrlInput" placeholder="${T('pasteUrl')}" style="width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--txt);padding:8px" onkeydown="if(event.key==='Enter')addImgUrl(this.value)"></div>`:''}
       ${ytEmbed(p.video)}
     </div>
     <div class="info">
@@ -737,8 +776,8 @@ function detailImagesBlock(p){
   if(isAdmin()){
     html+=`<div style="margin-top:14px">
       <input type="file" id="detailImgFile" accept="image/*" multiple style="display:none" onchange="uploadDetailImg(this)">
-      <button class="btn btn-ghost btn-sm" onclick="document.getElementById('detailImgFile').click()">${LANG==='zh'?'+ 上传详情图（可多选）':'+ Upload detail images'}</button>
-      <input id="detailImgUrl" placeholder="${LANG==='zh'?'或粘贴图片链接后回车':'or paste image URL + Enter'}" style="margin-top:8px;width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--txt);padding:8px" onkeydown="if(event.key==='Enter')addDetailImgUrl(this.value)">
+      <button class="btn btn-ghost btn-sm" onclick="document.getElementById('detailImgFile').click()">${T('uploadDetail')}</button>
+      <input id="detailImgUrl" placeholder="${T('pasteUrl')}" style="margin-top:8px;width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--txt);padding:8px" onkeydown="if(event.key==='Enter')addDetailImgUrl(this.value)">
     </div>`;
   }
   return html;
@@ -784,11 +823,11 @@ function renderFairDetail(){
       <h2 style="font-size:32px;margin-bottom:6px;letter-spacing:-.5px">${esc(L(f.name))}</h2>
       <p style="font-size:14px;color:#cdd5dd;margin-bottom:14px">${esc(L(f.location||{en:'',zh:''}))} · ${esc(L(f.subtitle||{en:'',zh:''}))}</p>
       <p style="line-height:1.6;color:rgba(255,255,255,.85);font-size:14px">${esc(L(f.desc||{en:'',zh:''}))}</p>
-      <div style="margin-top:14px;font-size:13px"><span style="color:#7DB8F0;font-weight:700">${(f.editions||[]).length}</span> <span style="color:rgba(255,255,255,.7)">${ZH?'届参展记录':'edition records'}</span></div>
+      <div style="margin-top:14px;font-size:13px"><span style="color:#7DB8F0;font-weight:700">${(f.editions||[]).length}</span> <span style="color:rgba(255,255,255,.7)">${pick({en:"edition records",zh:"届参展记录",de:"edition records",es:"edition records"})}</span></div>
     </div>
   </div>
   <div class="sec-title"><span class="bar"></span>${T('fairEditions')}</div>
-  <div class="sec-sub">${ZH?'按时间倒序排列，自动标记参展状态':'Sorted by date with auto status badges'}${isAdmin()?T('adminTip'):''}</div>
+  <div class="sec-sub">${pick({en:"Sorted by date with auto status badges",zh:"按时间倒序排列，自动标记参展状态",de:"Sorted by date with auto status badges",es:"Sorted by date with auto status badges"})}${isAdmin()?T('adminTip'):''}</div>
   ${isAdmin()?`<button class="btn" style="margin-bottom:16px" onclick="openEdit('fair-edition','')">${T('addEdition')}</button>`:''}
   ${sortedEds.length?sortedEds.map(ed=>{
     const s=editionStatus(ed);
@@ -799,7 +838,7 @@ function renderFairDetail(){
       <div style="font-size:13px;color:var(--txt2);margin-bottom:8px">📅 ${esc(fmtDateRange(ed.date,ed.dateEnd,LANG))}${ed.booth?` · 📍 ${T('booth')}: ${esc(ed.booth)}`:''}</div>
       ${L(ed.note||{en:'',zh:''})?`<div class="a">${esc(L(ed.note))}</div>`:''}
       ${(ed.photos&&ed.photos.length)?`<div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">${ed.photos.map((p,i)=>`<div style="position:relative;width:120px;height:90px;border-radius:8px;overflow:hidden;border:1px solid var(--line)"><img src="${esc(p)}" style="width:100%;height:100%;object-fit:cover" onerror="this.style.opacity=.3">${isAdmin()?`<span onclick="delFairEditionPhoto('${esc(ed.id)}',${i})" style="position:absolute;top:4px;right:4px;background:var(--danger);color:#fff;width:20px;height:20px;line-height:20px;text-align:center;border-radius:4px;cursor:pointer;font-size:12px">×</span>`:''}</div>`).join("")}</div>`:''}
-      ${isAdmin()?`<div style="margin-top:10px"><input type="file" id="fairPhotoFile-${esc(ed.id)}" accept="image/*" multiple style="display:none" onchange="uploadFairEditionPhoto('${esc(ed.id)}',this)"><button class="btn btn-ghost btn-sm" onclick="document.getElementById('fairPhotoFile-${esc(ed.id)}').click()">${ZH?'+ 上传现场照':'+ Upload photos'}</button></div>`:''}
+      ${isAdmin()?`<div style="margin-top:10px"><input type="file" id="fairPhotoFile-${esc(ed.id)}" accept="image/*" multiple style="display:none" onchange="uploadFairEditionPhoto('${esc(ed.id)}',this)"><button class="btn btn-ghost btn-sm" onclick="document.getElementById('fairPhotoFile-${esc(ed.id)}').click()">${pick({en:"+ Upload photos",zh:"+ 上传现场照",de:"+ Upload photos",es:"+ Upload photos"})}</button></div>`:''}
     </div>`;
   }).join(""):`<div class="empty">${T('noEditions')}</div>`}
   `;
@@ -808,7 +847,7 @@ function renderFairDetail(){
 /* 参展记录的增删改 */
 async function delFairEdition(eid){
   if(!isAdmin())return;
-  if(!confirm(LANG==='zh'?'确定删除这条参展记录？':'Delete this edition?'))return;
+  if(!confirm(T('confirmDelEdition')))return;
   const f=DB.fairs.find(x=>x.id===CUR_FAIR);if(!f)return;
   const idx=f.editions.findIndex(e=>e.id===eid);if(idx<0)return;
   const rm=f.editions.splice(idx,1)[0];
@@ -839,7 +878,7 @@ async function uploadFairEditionPhoto(eid,input){
 async function delFairEditionPhoto(eid,i){
   const f=DB.fairs.find(x=>x.id===CUR_FAIR);if(!f)return;
   const ed=f.editions.find(e=>e.id===eid);if(!ed||!ed.photos)return;
-  if(!confirm(LANG==='zh'?'删除这张照片?':'Delete this photo?'))return;
+  if(!confirm(T('confirmDelPhoto')))return;
   ed.photos.splice(i,1);
   if(await saveDB("Remove fair edition photo"))document.getElementById("main").innerHTML=renderFairDetail();
 }
@@ -905,7 +944,7 @@ async function uploadDetailImg(input){
   if(await saveDB("Add detail images to "+CUR_PID))document.getElementById("main").innerHTML=renderDetail();
 }
 function addDetailImgUrl(url){url=url.trim();if(!url)return;const p=DB.products.find(x=>String(x.id)===String(CUR_PID));p.detailImgs=p.detailImgs||[];p.detailImgs.push(url);saveDB("Add detail image url to "+CUR_PID).then(ok=>{if(ok)document.getElementById("main").innerHTML=renderDetail();});}
-async function delDetailImg(i){const p=DB.products.find(x=>String(x.id)===String(CUR_PID));if(!confirm(LANG==='zh'?'删除这张详情图？':'Delete this image?'))return;p.detailImgs.splice(i,1);if(await saveDB("Remove detail image from "+CUR_PID))document.getElementById("main").innerHTML=renderDetail();}
+async function delDetailImg(i){const p=DB.products.find(x=>String(x.id)===String(CUR_PID));if(!confirm(T('confirmDelImg')))return;p.detailImgs.splice(i,1);if(await saveDB("Remove detail image from "+CUR_PID))document.getElementById("main").innerHTML=renderDetail();}
 
 /* ===== EDIT MODAL ===== */
 /* 字段定义：bl=双语(存{en,zh}), s=单值字符串 */
@@ -979,8 +1018,8 @@ function openEdit(type,id){
   else if(!id&&type==="products")EDIT_SPECS=newSpecTemplate();
   else EDIT_SPECS=[];
   const lbl=o=>o[LANG]||o.en;
-  let html=`<div class="box"><h3>${id?(LANG==='zh'?'编辑':'Edit'):(LANG==='zh'?'新增':'Add')} ${lbl(sc.title)}</h3>
-    <p>${LANG==='zh'?'填中英两种语言；保存后同步到公开链接。':'Fill both EN & 中文; saved to the public link.'}</p>`;
+  let html=`<div class="box"><h3>${id?T('edit'):T('add')} ${lbl(sc.title)}</h3>
+    <p>${T('saveTip')}</p>`;
   for(const f of sc.fields){
     const v=it?it[f.k]:"";
     if(f.t==="bl"){
@@ -993,19 +1032,19 @@ function openEdit(type,id){
     }
   }
   if(sc.hasSpecs){
-    html+=`<div class="field"><label>${T('specs')}（${LANG==='zh'?'参数名 / 参数值，可双语':'key / value'}）</label><div id="specEdit">${specEditRows()}</div>
-      <button class="btn btn-ghost btn-sm" onclick="addSpecRow()">+ ${LANG==='zh'?'添加参数':'Add spec'}</button>
-      <button class="btn btn-ghost btn-sm" style="margin-left:8px" onclick="applyTemplate()">${LANG==='zh'?'套用标准模板':'Apply template'}</button></div>`;
+    html+=`<div class="field"><label>${T('specs')}（${T('specHint')}）</label><div id="specEdit">${specEditRows()}</div>
+      <button class="btn btn-ghost btn-sm" onclick="addSpecRow()">+ ${T('addSpec')}</button>
+      <button class="btn btn-ghost btn-sm" style="margin-left:8px" onclick="applyTemplate()">${T('applyTpl')}</button></div>`;
   }
-  html+=`<div style="display:flex;gap:10px;margin-top:10px"><button class="btn" id="editSaveBtn" onclick="saveEdit()">${LANG==='zh'?'保存':'Save'}</button><button class="btn btn-ghost" onclick="closeEdit()">${LANG==='zh'?'取消':'Cancel'}</button></div></div>`;
+  html+=`<div style="display:flex;gap:10px;margin-top:10px"><button class="btn" id="editSaveBtn" onclick="saveEdit()">${T('save')}</button><button class="btn btn-ghost" onclick="closeEdit()">${T('cancel')}</button></div></div>`;
   const m=document.getElementById("editModal");m.innerHTML=html;m.classList.add("show");
 }
 function specEditRows(){
   const opt=(g)=>`<option value="basic"${g==='basic'?' selected':''}>${T('grpBasic')}</option><option value="packaging"${g==='packaging'?' selected':''}>${T('grpPack')}</option><option value="desc"${g==='desc'?' selected':''}>${T('grpDesc')}</option>`;
   return EDIT_SPECS.map((s,i)=>`<div class="speceditrow">
     <select style="flex:0 0 110px" onchange="EDIT_SPECS[${i}].g=this.value">${opt(s.g||'basic')}</select>
-    <input value="${esc(L(s.k))}" placeholder="${LANG==='zh'?'参数名':'name'}" oninput="EDIT_SPECS[${i}].k=mkbl(this.value,EDIT_SPECS[${i}].k)">
-    <input value="${esc(L(s.v))}" placeholder="${LANG==='zh'?'参数值':'value'}" oninput="EDIT_SPECS[${i}].v=mkbl(this.value,EDIT_SPECS[${i}].v)">
+    <input value="${esc(L(s.k))}" placeholder="${T('paramName')}" oninput="EDIT_SPECS[${i}].k=mkbl(this.value,EDIT_SPECS[${i}].k)">
+    <input value="${esc(L(s.v))}" placeholder="${T('paramValue')}" oninput="EDIT_SPECS[${i}].v=mkbl(this.value,EDIT_SPECS[${i}].v)">
     <button class="rm" onclick="EDIT_SPECS.splice(${i},1);document.getElementById('specEdit').innerHTML=specEditRows()">×</button>
   </div>`).join("")||`<div style="color:var(--txt2);font-size:12px;margin-bottom:8px">${T('noSpec')}</div>`;
 }
@@ -1052,10 +1091,10 @@ async function saveEdit(){
     else if(CUR==="fair-detail")document.getElementById("main").innerHTML=renderFairDetail();
     else render();
   }
-  else if(btn){btn.disabled=0;btn.textContent=LANG==='zh'?'保存':'Save';}
+  else if(btn){btn.disabled=0;btn.textContent=T('save');}
 }
 async function delItem(type,id){
-  if(!isAdmin())return;if(!confirm(LANG==='zh'?'确定删除？客户也将看不到。':'Delete this? Clients will not see it.'))return;
+  if(!isAdmin())return;if(!confirm(T('confirmDel')))return;
   const arr=DB[type];const idx=arr.findIndex(x=>String(x.id)===String(id));if(idx<0)return toast("Not found",true);
   const rm=arr.splice(idx,1)[0];
   if(await saveDB("Delete "+type)){if(CUR==="detail")show("products");else render();}else arr.splice(idx,0,rm);
@@ -1064,9 +1103,9 @@ async function delItem(type,id){
 /* ===== LOGIN ===== */
 function openLogin(){
   const m=document.getElementById("loginModal");
-  m.innerHTML=`<div class="box"><h3>${T('login')==='🔒 Admin'?'Admin Login':'管理员登录'}</h3><p>${LANG==='zh'?'输入管理令牌（GitHub Token），仅保存在你的浏览器。':'Enter the admin token (GitHub Token). Stored only in your browser.'}</p>
-    <div class="field"><label>${LANG==='zh'?'管理令牌':'Admin Token'}</label><input id="tokenInput" type="password" placeholder="github_pat_ ..." onkeydown="if(event.key==='Enter')doLogin()"></div>
-    <div style="display:flex;gap:10px;margin-top:6px"><button class="btn" onclick="doLogin()">${LANG==='zh'?'登录':'Login'}</button><button class="btn btn-ghost" onclick="closeLogin()">${LANG==='zh'?'取消':'Cancel'}</button></div></div>`;
+  m.innerHTML=`<div class="box"><h3>${T('adminLogin')}</h3><p>${T('adminLoginDesc')}</p>
+    <div class="field"><label>${T('adminToken')}</label><input id="tokenInput" type="password" placeholder="github_pat_ ..." onkeydown="if(event.key==='Enter')doLogin()"></div>
+    <div style="display:flex;gap:10px;margin-top:6px"><button class="btn" onclick="doLogin()">${T('loginAct')}</button><button class="btn btn-ghost" onclick="closeLogin()">${T('cancel')}</button></div></div>`;
   m.classList.add("show");setTimeout(()=>{const i=document.getElementById("tokenInput");if(i)i.focus();},100);
 }
 function closeLogin(){document.getElementById("loginModal").classList.remove("show");}
@@ -1077,25 +1116,25 @@ async function doLogin(){
     const r=await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}`,{headers:{Authorization:"token "+tk}});
     if(!r.ok)throw new Error("Invalid token");
     const j=await r.json();if(!j.permissions||!j.permissions.push)throw new Error("No write permission");
-    localStorage.setItem(LS_TOKEN,tk);closeLogin();toast(LANG==='zh'?'登录成功':'Logged in');buildNav();show("products");
+    localStorage.setItem(LS_TOKEN,tk);closeLogin();toast(T('loggedIn'));buildNav();show("products");
   }catch(e){toast("Login failed: "+e.message,true)}
 }
-function logout(){localStorage.removeItem(LS_TOKEN);toast(LANG==='zh'?'已退出':'Logged out');buildNav();show("home");}
+function logout(){localStorage.removeItem(LS_TOKEN);toast(T('loggedOut'));buildNav();show("home");}
 /* 员工登录（只读密码门） */
 function openStaffLogin(){
   const m=document.getElementById("loginModal");
   m.innerHTML=`<div class="box"><h3>${T('staffTitle')}</h3><p>${T('staffDesc')}</p>
     <div class="field"><label>${T('staffPwLabel')}</label><input id="staffPwInput" type="password" placeholder="••••••" onkeydown="if(event.key==='Enter')doStaffLogin()"></div>
-    <div style="display:flex;gap:10px;margin-top:6px"><button class="btn" onclick="doStaffLogin()">${LANG==='zh'?'登录':'Login'}</button><button class="btn btn-ghost" onclick="closeLogin()">${LANG==='zh'?'取消':'Cancel'}</button></div></div>`;
+    <div style="display:flex;gap:10px;margin-top:6px"><button class="btn" onclick="doStaffLogin()">${T('loginAct')}</button><button class="btn btn-ghost" onclick="closeLogin()">${T('cancel')}</button></div></div>`;
   m.classList.add("show");setTimeout(()=>{const i=document.getElementById("staffPwInput");if(i)i.focus();},100);
 }
 function doStaffLogin(){
   const pw=document.getElementById("staffPwInput").value.trim();
-  if(pw!==STAFF_PASSWORD)return toast(LANG==='zh'?'密码错误':'Wrong password',true);
-  localStorage.setItem(LS_STAFF,"1");closeLogin();toast(LANG==='zh'?'登录成功':'Logged in');buildNav();show("scripts");
+  if(pw!==STAFF_PASSWORD)return toast(T('wrongPw'),true);
+  localStorage.setItem(LS_STAFF,"1");closeLogin();toast(T('loggedIn'));buildNav();show("scripts");
 }
-function staffLogout(){localStorage.removeItem(LS_STAFF);toast(LANG==='zh'?'已退出':'Logged out');buildNav();show("home");}
-function copyTxt(t){navigator.clipboard.writeText(t).then(()=>toast(LANG==='zh'?'已复制':'Copied')).catch(()=>toast("Copy failed",true));}
+function staffLogout(){localStorage.removeItem(LS_STAFF);toast(T('loggedOut'));buildNav();show("home");}
+function copyTxt(t){navigator.clipboard.writeText(t).then(()=>toast(T('copied'))).catch(()=>toast("Copy failed",true));}
 
 /* ===== ROUTER ===== */
 const VIEWS={home:renderHome,identity:renderIdentity,products:renderProducts,intel:renderIntel,scripts:renderScripts,brand:renderBrand,cases:renderCases};
@@ -1121,7 +1160,7 @@ function show(t){
 /* ===== INIT ===== */
 (async function(){
   if(!await loadDB())return;
-  document.documentElement.lang=(LANG==="zh"?"zh-CN":"en");
+  document.documentElement.lang=({en:"en",zh:"zh-CN",de:"de",es:"es"})[LANG]||"en";
   buildNav();
   document.getElementById("nav").addEventListener("click",e=>{if(e.target.dataset.t)show(e.target.dataset.t)});
   CUR="home";render();
