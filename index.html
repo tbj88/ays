@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
 <title>AIYISI · Outdoor Rug Catalog</title>
 <style>
   :root{
@@ -47,21 +48,46 @@
   .langtoggle{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-left:4px}
   .langtoggle button{padding:6px 11px;border-radius:0;font-size:13px;border:none}
   .langtoggle button.on{background:var(--accent);color:#fff;font-weight:700}
-  /* === 语言下拉菜单（替代 langtoggle） === */
-  .langdropdown{position:relative;margin-left:6px}
-  .langbtn{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;background:var(--panel);border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:13px;color:var(--txt);font-weight:600;transition:.15s}
-  .langbtn:hover{border-color:var(--accent)}
-  .langbtn .lf{font-size:15px;line-height:1}
-  .langbtn .lc{color:var(--txt2);font-size:11px;margin-left:2px;transition:transform .15s}
-  .langdropdown.open .langbtn .lc{transform:rotate(180deg)}
-  .langdropdown.open .langbtn{border-color:var(--accent)}
-  .langmenu{display:none;position:absolute;top:calc(100% + 6px);right:0;min-width:160px;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.18);z-index:50}
-  .langdropdown.open .langmenu{display:block}
-  .langmenu button{display:flex;align-items:center;gap:10px;width:100%;padding:9px 14px;background:transparent;border:none;color:var(--txt);font-size:13px;cursor:pointer;text-align:left;font-weight:500;transition:background .12s}
-  .langmenu button:hover{background:var(--panel2)}
-  .langmenu button.on{background:rgba(31,111,191,.08);color:var(--accent);font-weight:700}
-  .langmenu .lf{font-size:16px;line-height:1}
-  .langmenu .lk{margin-left:auto;color:var(--accent);font-weight:800}
+  /* === 语言切换按钮（触发全屏弹窗） === */
+  .lang-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;background:var(--panel);cursor:pointer;color:var(--txt);font-weight:600;transition:all .15s;margin-left:6px;white-space:nowrap}
+  .lang-btn:hover{border-color:var(--accent);color:var(--accent)}
+  /* === 全屏 16 语弹窗（按 skill §2.5） === */
+  .lang-modal-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:200;display:none;align-items:flex-start;justify-content:center;padding:60px 20px 40px;overflow-y:auto;backdrop-filter:blur(4px)}
+  .lang-modal-backdrop.open{display:flex;animation:fadeIn .2s ease}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  .lang-modal{background:var(--panel);border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.25);width:100%;max-width:1100px;padding:32px 40px 36px;position:relative;animation:slideUp .25s ease}
+  @keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .lang-modal-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:8px;background:transparent;border:none;color:var(--txt2);font-size:22px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+  .lang-modal-close:hover{background:var(--panel2);color:var(--txt)}
+  .lang-modal h3{font-size:22px;font-weight:800;letter-spacing:-.3px;margin-bottom:6px;color:var(--txt)}
+  .lang-modal .lang-sub{font-size:14px;color:var(--txt2);margin-bottom:24px}
+  .lang-modal .lang-group{margin-bottom:24px}
+  .lang-modal .lang-group-title{font-size:11.5px;font-weight:800;letter-spacing:2px;color:var(--accent);text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .lang-modal .lang-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px 16px}
+  .lang-modal .lang-row{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:8px;cursor:pointer;font-size:14.5px;color:var(--txt);transition:all .12s;border:1px solid transparent}
+  .lang-modal .lang-row:hover{background:var(--panel2);border-color:var(--line)}
+  .lang-modal .lang-row.active{background:rgba(31,111,191,.08);border-color:var(--accent);font-weight:700;color:var(--accent)}
+  .lang-modal .lang-row .flag{font-size:22px;line-height:1;flex-shrink:0}
+  .lang-modal .lang-row .label{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .lang-modal .lang-row .check{color:var(--accent);font-weight:800;flex-shrink:0}
+  @media(max-width:900px){.lang-modal{padding:24px 22px 28px}.lang-modal .lang-grid{grid-template-columns:repeat(2,1fr)}.lang-modal h3{font-size:19px}}
+  @media(max-width:500px){.lang-modal .lang-grid{grid-template-columns:1fr}}
+  /* RTL 阿语 */
+  [dir="rtl"] .lang-modal{direction:rtl;text-align:right}
+  [dir="rtl"] header .top{flex-direction:row-reverse}
+  /* === .page-back 返回首页按钮（按 skill §3.1 标准） === */
+  .page-back{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;background:var(--panel);border:1px solid var(--line);border-radius:8px;font-weight:600;color:var(--accent);text-decoration:none;font-size:13px;cursor:pointer;transition:all .15s;margin-bottom:14px}
+  .page-back:hover{background:var(--accent);color:#fff;border-color:var(--accent);transform:translateX(-2px)}
+  /* === Catalog sticky 工具条（按 skill §3.3） === */
+  .catalog-sticky{position:sticky;top:69px;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(10px);margin:0 -22px 24px;padding:18px 22px 16px;border-bottom:1px solid var(--line);transition:box-shadow .2s}
+  .catalog-sticky.is-stuck{box-shadow:0 4px 14px rgba(31,111,191,.10)}
+  .catalog-sticky .page-back{margin-bottom:10px}
+  @media(max-width:900px){.catalog-sticky{top:62px;padding:12px 16px 12px;margin:0 -16px 16px}}
+  /* === Filter chips（产品分类筛选） === */
+  .filter-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .filter-chip{padding:6px 14px;border:1px solid var(--line);border-radius:20px;background:var(--panel);color:var(--txt);font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
+  .filter-chip:hover{border-color:var(--accent);color:var(--accent)}
+  .filter-chip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
   .adminbadge{font-size:11px;padding:3px 9px;border-radius:20px;background:var(--warn);color:#1a1206;font-weight:700}
   main{max-width:1240px;margin:0 auto;padding:26px 22px 80px;min-height:50vh}
   .hero{background:linear-gradient(135deg,#16241c,#1a2129);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow);margin-bottom:24px}
@@ -299,11 +325,11 @@
 <body>
 <header>
   <div class="top">
-    <div class="brand">
+    <div class="brand" translate="no">
       <div class="logo"><img src="brand/aiyisi-logo.png" alt="AIYISI Logo"></div>
       <div>
-        <h1>AIYISI · Outdoor Rug Catalog</h1>
-        <p>Taizhou Aiyisi Leisure Products Co., Ltd.</p>
+        <h1 translate="no">AIYISI · Outdoor Rug Catalog</h1>
+        <p translate="no">Taizhou Aiyisi Leisure Products Co., Ltd.</p>
       </div>
     </div>
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
@@ -558,7 +584,90 @@ function allProducts(){return DB.products}
 function allScripts(){return DB.scripts}
 
 /* ===== LANG / NAV ===== */
-function setLang(l){LANG=l;localStorage.setItem(LS_LANG,l);const map={en:"en","zh":"zh-CN",de:"de",es:"es"};document.documentElement.lang=map[l]||"en";buildNav();render();}
+/* 16 种语言，按地理区域分组（首版 EN/ZH/DE/ES 有真翻译，其余 12 种留待批量机翻填充） */
+const LANGS = [
+  {code:"en", flag:"🇺🇸", label:"English",       group:"global"},
+  {code:"zh", flag:"🇨🇳", label:"简体中文",       group:"asia",   htmlLang:"zh-CN"},
+  {code:"de", flag:"🇩🇪", label:"Deutsch",       group:"europe"},
+  {code:"es", flag:"🇪🇸", label:"Español",       group:"europe"},
+  {code:"fr", flag:"🇫🇷", label:"Français",      group:"europe"},
+  {code:"it", flag:"🇮🇹", label:"Italiano",      group:"europe"},
+  {code:"pt", flag:"🇵🇹", label:"Português",     group:"europe"},
+  {code:"nl", flag:"🇳🇱", label:"Nederlands",    group:"europe"},
+  {code:"ru", flag:"🇷🇺", label:"Русский",       group:"europe"},
+  {code:"tr", flag:"🇹🇷", label:"Türkçe",        group:"europe"},
+  {code:"ja", flag:"🇯🇵", label:"日本語",         group:"asia"},
+  {code:"ko", flag:"🇰🇷", label:"한국어",         group:"asia"},
+  {code:"th", flag:"🇹🇭", label:"ไทย",           group:"asia"},
+  {code:"vi", flag:"🇻🇳", label:"Tiếng Việt",    group:"asia"},
+  {code:"hi", flag:"🇮🇳", label:"हिन्दी",          group:"asia"},
+  {code:"ar", flag:"🇸🇦", label:"العربية",       group:"mideast", rtl:true}
+];
+const LANG_BY_CODE = Object.fromEntries(LANGS.map(x=>[x.code,x]));
+const LANG_GROUPS = [
+  {key:"global",  title:{en:"Global",        zh:"全球",       de:"Weltweit",     es:"Global"}},
+  {key:"asia",    title:{en:"Asia Pacific",  zh:"亚太地区",    de:"Asien-Pazifik",es:"Asia Pacifico"}},
+  {key:"europe",  title:{en:"Europe",        zh:"欧洲",       de:"Europa",       es:"Europa"}},
+  {key:"mideast", title:{en:"Middle East",   zh:"中东",       de:"Naher Osten",  es:"Oriente Medio"}},
+];
+
+function setLang(l){
+  LANG=l;
+  localStorage.setItem(LS_LANG,l);
+  const meta = LANG_BY_CODE[l] || LANG_BY_CODE.en;
+  document.documentElement.lang = meta.htmlLang || l;
+  document.documentElement.setAttribute("translate","no");
+  document.documentElement.dir = meta.rtl ? "rtl" : "ltr";
+  closeLangModal();
+  buildNav();
+  render();
+}
+
+function openLangModal(){
+  let modal = document.getElementById("langModal");
+  if(!modal){
+    // 首次打开时插入弹窗 DOM
+    modal = document.createElement("div");
+    modal.id = "langModal";
+    modal.className = "lang-modal-backdrop";
+    modal.setAttribute("translate","no");
+    modal.onclick = e=>{ if(e.target===modal) closeLangModal(); };
+    modal.innerHTML = `<div class="lang-modal" role="dialog" aria-labelledby="langModalTitle">
+      <button class="lang-modal-close" onclick="closeLangModal()" aria-label="Close">×</button>
+      <h3 id="langModalTitle">Choose Your Language</h3>
+      <p class="lang-sub">Select your preferred language to browse our products.</p>
+      <div id="langModalBody"></div>
+    </div>`;
+    document.body.appendChild(modal);
+  }
+  // 按分组渲染语言网格
+  const body = modal.querySelector("#langModalBody");
+  body.innerHTML = LANG_GROUPS.map(g=>{
+    const items = LANGS.filter(x=>x.group===g.key);
+    if(!items.length) return "";
+    const title = L(g.title) || g.title.en;
+    return `<div class="lang-group">
+      <div class="lang-group-title">${esc(title)}</div>
+      <div class="lang-grid">
+        ${items.map(x=>`
+          <div class="lang-row ${LANG===x.code?'active':''}" onclick="setLang('${x.code}')">
+            <span class="flag">${x.flag}</span>
+            <span class="label">${esc(x.label)}</span>
+            ${LANG===x.code?'<span class="check">✓</span>':''}
+          </div>
+        `).join("")}
+      </div>
+    </div>`;
+  }).join("");
+  modal.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+function closeLangModal(){
+  const m = document.getElementById("langModal");
+  if(m){ m.classList.remove("open"); document.body.style.overflow = ""; }
+}
+// ESC 关闭
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeLangModal(); });
 function buildNav(){
   // 切换 admin 视觉提示（CSS 用）
   document.body.classList.toggle("is-admin",isAdmin());
@@ -567,17 +676,9 @@ function buildNav(){
   if(canViewInternal()){tabs.push(["intel",T("intel")],["scripts",T("scripts")]);}
   const nav=document.getElementById("nav");
   let html=tabs.map(([t,l])=>`<button data-t="${t}" class="${CUR===t?'active':''}">${l}</button>`).join("");
-  // 语言切换：折叠下拉菜单（节省空间 + 国际站标准做法）
-  const LANG_LABELS={en:{flag:"🇺🇸",name:"English"},zh:{flag:"🇨🇳",name:"中文"},de:{flag:"🇩🇪",name:"Deutsch"},es:{flag:"🇪🇸",name:"Español"}};
-  const cur=LANG_LABELS[LANG]||LANG_LABELS.en;
-  html+=`<div class="langdropdown" id="langDropdown">
-    <button class="langbtn" onclick="event.stopPropagation();document.getElementById('langDropdown').classList.toggle('open')">
-      <span class="lf">${cur.flag}</span><span class="ln">${cur.name}</span><span class="lc">▾</span>
-    </button>
-    <div class="langmenu">
-      ${["en","zh","de","es"].map(l=>{const m=LANG_LABELS[l];return `<button class="${LANG===l?'on':''}" onclick="setLang('${l}');document.getElementById('langDropdown').classList.remove('open')"><span class="lf">${m.flag}</span><span class="ln">${m.name}</span>${LANG===l?'<span class="lk">✓</span>':''}</button>`;}).join("")}
-    </div>
-  </div>`;
+  // 语言切换：16 语全屏弹窗（按 skill §2.4-2.5 实现）
+  const cur = LANG_BY_CODE[LANG] || LANG_BY_CODE.en;
+  html+=`<button class="lang-btn" id="langBtnLabel" translate="no" onclick="openLangModal()">${cur.flag} ${esc(cur.label)} ▾</button>`;
   if(IS_ADMIN_URL && !isAdmin()) html+=`<button data-t="login" style="color:var(--warn)">${T('login')}</button>`;
   if(isAdmin()) html+=`<span class="adminbadge">${T('adminmode')}</span><button data-t="logout" style="color:var(--txt2)">${T('logout')}</button>`;
   if(IS_STAFF_URL && !isStaff() && !isAdmin()) html+=`<button data-t="stafflogin" style="color:var(--warn)">${T('staffLogin')}</button>`;
@@ -828,13 +929,15 @@ function adminBtns(type,id){
          `<button class="editb" onclick="event.stopPropagation();openEdit('${type}','${esc(id)}')">${T('edit')}</button>`;
 }
 function renderIdentity(){
-  return `<div class="sec-title"><span class="bar"></span>${T('identity')}</div>
+  return `<a class="page-back" onclick="show('home');return false" href="#">← ${T('backToHome')}</a>
+  <div class="sec-title" translate="no"><span class="bar"></span>${T('identity')}</div>
   <div class="sec-sub">${T('certSub')}${isAdmin()?T('adminTip'):''}</div>
   ${isAdmin()?`<button class="btn" style="margin-bottom:16px" onclick="openEdit('certs','')">${T('addCert')}</button>`:''}
   ${DB.certs.map(c=>`<div class="qrow">${adminBtns('certs',c.id)}<div class="q">${esc(L(c.t))}</div><div class="a">${esc(L(c.d))}</div>${c.verify&&c.verify.url?`<div style="margin-top:12px"><a href="${esc(c.verify.url)}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:7px 14px;border-radius:7px;font-size:12px;font-weight:700;text-decoration:none">🔍 ${esc(L(c.verify.label))} →</a></div>`:''}</div>`).join("")}`;
 }
 function renderIntel(){
-  return `<div class="sec-title"><span class="bar"></span>${T('intel')} <span style="font-size:12px;color:var(--warn)">(${T('internalOnly')})</span></div>
+  return `<a class="page-back" onclick="show('home');return false" href="#">← ${T('backToHome')}</a>
+  <div class="sec-title" translate="no"><span class="bar"></span>${T('intel')} <span style="font-size:12px;color:var(--warn)">(${T('internalOnly')})</span></div>
   <div class="sec-sub">${T('intelSub')}${isAdmin()?T('adminTip'):''}</div>
   ${isAdmin()?`<button class="btn" style="margin-bottom:16px" onclick="openEdit('intel','')">${T('addIntel')}</button>`:''}
   ${DB.intel.map(i=>`<div class="qrow">${adminBtns('intel',i.id)}<div class="q">${esc(L(i.t))}</div><div class="a">${esc(L(i.d))}</div></div>`).join("")}`;
@@ -1490,7 +1593,8 @@ async function heoSave(){
 
 function renderCases(){
   const cs=DB.cases||[];
-  return `<div class="sec-title"><span class="bar"></span>${T('cases')}</div>
+  return `<a class="page-back" onclick="show('home');return false" href="#">← ${T('backToHome')}</a>
+  <div class="sec-title" translate="no"><span class="bar"></span>${T('cases')}</div>
   <div class="sec-sub">${T('casesSub')}${isAdmin()?T('adminTip'):''}</div>
   ${isAdmin()?`<button class="btn" style="margin-bottom:16px" onclick="openEdit('cases','')">${T('addCase')}</button>`:''}
   <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr))">
@@ -1517,7 +1621,8 @@ function scriptRow(s){
 function scriptListHTML(f=""){f=f.toLowerCase();const list=allScripts().filter(s=>(bothLang(s.t)+" "+bothLang(s.c)+" "+bothLang(s.cat)+" "+s.id).toLowerCase().includes(f));return{count:list.length,html:list.map(scriptRow).join("")};}
 function renderScripts(filter=""){
   const r=scriptListHTML(filter);
-  return `<div class="sec-title"><span class="bar"></span>${T('scripts')} <span style="font-size:12px;color:var(--warn)">(${T('internalOnly')})</span></div>
+  return `<a class="page-back" onclick="show('home');return false" href="#">← ${T('backToHome')}</a>
+  <div class="sec-title" translate="no"><span class="bar"></span>${T('scripts')} <span style="font-size:12px;color:var(--warn)">(${T('internalOnly')})</span></div>
   <div class="sec-sub">${T('scriptsSub')}${isAdmin()?T('adminTip'):''}</div>
   <div class="toolbar"><div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
     <input id="ssearch" placeholder="${T('searchScript')}" value="${esc(filter)}" oninput="filterScripts(this.value)"></div>
@@ -1547,18 +1652,64 @@ function productCard(p){
     </div>`;
 }
 function bothLang(v){if(v&&typeof v==="object")return (v.en||"")+" "+(v.zh||"");return v||"";}
-function productListHTML(f=""){f=f.toLowerCase();const list=allProducts().filter(p=>(bothLang(p.name)+" "+p.id+" "+(p.sku||"")).toLowerCase().includes(f));return{count:list.length,html:`<div class="grid">${list.map(productCard).join("")}</div>`};}
+/* 智能分类：按产品名/SKU 关键词归到 RV / Patio / Beach / Round / Other */
+const PRODUCT_CATEGORIES = [
+  {key:"all",      label:{en:"All",        zh:"全部",       de:"Alle",         es:"Todos"}},
+  {key:"rv",       label:{en:"RV / Camping", zh:"房车 / 露营", de:"Wohnmobil",    es:"Caravana"},     match:/rv|camping|camper|awning|motorhome/i},
+  {key:"patio",    label:{en:"Patio / Garden",zh:"露台 / 花园",de:"Terrasse",     es:"Patio"},        match:/patio|garden|deck|outdoor\s*rug|backyard|terrace|reversible/i},
+  {key:"beach",    label:{en:"Beach / Picnic",zh:"沙滩 / 野餐",de:"Strand",       es:"Playa"},        match:/beach|picnic|sand|seaside|pool/i},
+  {key:"round",    label:{en:"Round",         zh:"圆形垫",     de:"Rund",         es:"Redondo"},      match:/round|circle|mandala|bohemian/i},
+  {key:"custom",   label:{en:"Custom / Other",zh:"定制 / 其他",de:"Sonder",       es:"Personalizado"},match:/custom|special|other|prayer|tapis/i},
+];
+function categorize(p){
+  const txt = (bothLang(p.name)+" "+(p.id||"")+" "+(p.sku||"")+" "+bothLang(p.desc||{})).toLowerCase();
+  for(const c of PRODUCT_CATEGORIES){
+    if(c.key==="all") continue;
+    if(c.match && c.match.test(txt)) return c.key;
+  }
+  return "patio"; // 兜底归到 Patio（最通用）
+}
+function productListHTML(f="",cat="all"){
+  f=f.toLowerCase();
+  const list=allProducts().filter(p=>{
+    if(f && !(bothLang(p.name)+" "+p.id+" "+(p.sku||"")).toLowerCase().includes(f)) return false;
+    if(cat!=="all" && categorize(p)!==cat) return false;
+    return true;
+  });
+  return{count:list.length,html:`<div class="grid">${list.map(productCard).join("")}</div>`};
+}
+let PRODUCT_CUR_CAT="all", PRODUCT_CUR_F="";
 function renderProducts(filter=""){
-  const r=productListHTML(filter);
-  return `<div class="sec-title"><span class="bar"></span>${T('products')}</div>
-  <div class="sec-sub">${T('productsSub')}${isAdmin()?T('adminTip'):''}</div>
-  <div class="toolbar"><div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-    <input id="psearch" placeholder="${T('searchProduct')}" value="${esc(filter)}" oninput="filterProducts(this.value)"></div>
-    <div class="count" id="pcount">${r.count} ${T('items')}</div></div>
+  PRODUCT_CUR_F = filter || "";
+  const r=productListHTML(PRODUCT_CUR_F, PRODUCT_CUR_CAT);
+  return `<div class="catalog-sticky" id="catalogSticky">
+    <a class="page-back" onclick="show('home');return false" href="#">← ${T('backToHome')}</a>
+    <div class="sec-title" translate="no"><span class="bar"></span>${T('products')}</div>
+    <div class="sec-sub">${T('productsSub')}${isAdmin()?T('adminTip'):''}</div>
+    <div class="toolbar" style="margin-bottom:0"><div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="psearch" placeholder="${T('searchProduct')}" value="${esc(PRODUCT_CUR_F)}" oninput="filterProducts(this.value)"></div>
+      <div class="count" id="pcount">${r.count} ${T('items')}</div></div>
+    <div class="filter-chips" id="filterChips">
+      ${PRODUCT_CATEGORIES.map(c=>`<button class="filter-chip ${PRODUCT_CUR_CAT===c.key?'on':''}" data-cat="${c.key}" onclick="filterByCategory('${c.key}')">${esc(L(c.label))}</button>`).join("")}
+    </div>
+  </div>
   ${isAdmin()?`<button class="btn" style="margin-bottom:16px" onclick="openEdit('products','')">${T('addProduct')}</button>`:''}
   <div id="plist">${r.html}</div>`;
 }
-function filterProducts(v){const r=productListHTML(v);const l=document.getElementById("plist"),c=document.getElementById("pcount");if(l)l.innerHTML=r.html;if(c)c.textContent=r.count+" "+T('items');}
+function filterProducts(v){
+  PRODUCT_CUR_F = v||"";
+  const r=productListHTML(PRODUCT_CUR_F, PRODUCT_CUR_CAT);
+  const l=document.getElementById("plist"),c=document.getElementById("pcount");
+  if(l)l.innerHTML=r.html;
+  if(c)c.textContent=r.count+" "+T('items');
+}
+function filterByCategory(cat){
+  PRODUCT_CUR_CAT = cat;
+  document.querySelectorAll("#filterChips .filter-chip").forEach(b=>{
+    b.classList.toggle("on", b.dataset.cat===cat);
+  });
+  filterProducts(PRODUCT_CUR_F);
+}
 
 /* ===== RENDER: PRODUCT DETAIL ===== */
 function ytEmbed(url){
@@ -2075,7 +2226,25 @@ function show(t){
   CUR=t;buildNav();render();
   if(t==="home" && window.__pendingHero){heroStartAuto(window.__pendingHero);window.__pendingHero=null;}
   if(t==="brand" && typeof psApply==="function")setTimeout(psApply,0); // Pattern Studio 默认参数
+  if(t==="products") setTimeout(setupCatalogSticky,50);  // 给 sticky 工具条加吸顶阴影
   window.scrollTo({top:0,behavior:"smooth"});
+}
+/* Catalog sticky 吸顶阴影（按 skill §3.3） */
+function setupCatalogSticky(){
+  const sticky=document.getElementById("catalogSticky");
+  if(!sticky)return;
+  // 在 sticky 上方插一个 sentinel
+  let sentinel=document.getElementById("catalogSentinel");
+  if(!sentinel){
+    sentinel=document.createElement("div");
+    sentinel.id="catalogSentinel";
+    sentinel.style.cssText="height:1px;position:absolute;top:0;left:0;right:0";
+    sticky.parentNode.insertBefore(sentinel,sticky);
+  }
+  const io=new IntersectionObserver(es=>{
+    sticky.classList.toggle("is-stuck", !es[0].isIntersecting);
+  },{threshold:0});
+  io.observe(sentinel);
 }
 
 /* ===== INIT ===== */
